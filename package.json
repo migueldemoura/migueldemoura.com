@@ -12,5 +12,10 @@
     "stylelint": "^9.1.3",
     "stylelint-scss": "^2.5.0",
     "stylelint-config-recommended": "^2.1.0"
+  },
+  "scripts": {
+    "setup": "bundle install && npm install",
+    "serve": "bundle exec jekyll serve",
+    "clean": "rm -rf package-lock.json Gemfile.lock .jekyll-cache/ node_modules/ _site/"
   }
 }
