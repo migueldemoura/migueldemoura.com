@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
-
 gem 'autoprefixer-rails', '>= 8.2.0'
 gem 'image_optim', '>= 0.26.1'
 gem 'jekyll', '>= 3.7.3'
