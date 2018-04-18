@@ -34,6 +34,6 @@
 
     <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }}"/>
 
-    {% asset main.css %}
+    {% asset main.css !type %}
     {% asset main.js defer !type %}
 </head>
