@@ -7,8 +7,8 @@
                 sizes='(max-width: 240px) 200px, 350px'
                 alt='{{ include.alt }}'
                 data-action='zoom'
-                data-zooming-width='{{ assets[include.path].width }}'
-                data-zooming-height='{{ assets[include.path].height }}'
+                data-zooming-width='{{ assets[include.path].dimensions.width }}'
+                data-zooming-height='{{ assets[include.path].dimensions.height }}'
             %}
         {% else %}
             {% asset '{{ include.path }}'
@@ -18,8 +18,8 @@
                 sizes='(max-width: 240px) 200px, (max-width: 480px) 440px, 610px'
                 alt='{{ include.alt }}'
                 data-action='zoom'
-                data-zooming-width='{{ assets[include.path].width }}'
-                data-zooming-height='{{ assets[include.path].height }}'
+                data-zooming-width='{{ assets[include.path].dimensions.width }}'
+                data-zooming-height='{{ assets[include.path].dimensions.height }}'
             %}
         {% endif %}
     </a>
