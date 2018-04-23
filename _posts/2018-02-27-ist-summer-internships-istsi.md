@@ -10,7 +10,7 @@ tags: [internships, student society]
 
 One of the most common critiques regarding engineering courses is that they aren't "practical enough". Four years after starting my studies I can see some substance to that statement. The curriculum nails the theoretical foundations, but pragmatic applications to the taught concepts are, at times, still lacking. This appears not to be a mere student sentiment, given some feedback I've received from HR managers regarding below-average performance in certain soft skills like communication and proactivity by fresh out of college engineers. My faculty, [Instituto Superior Técnico (IST)](https://tecnico.ulisboa.pt), attempts to address this issue by fostering an environment where student groups can create opportunities to advance these skills.
 
-This setting allowed a fresh initiative to be born by some course-specific student societies in partnership with [TT@Técnico](https://tt.tecnico.ulisboa.pt) - the [IST Summer Internships](https://istsi.org), with the aim of filling this wildly perceived gap. With this programme, the students working at these societies would reach out to companies relevant to their field of study and attempt to compile a list of summer internship vacancies for their colleagues to apply.
+This setting allowed a fresh initiative to be born by some course-specific student societies in partnership with [TT@Técnico](https://tt.tecnico.ulisboa.pt) - the [IST Summer Internships](https://web.archive.org/web/20170820010152/https://istsi.org/), with the aim of filling this wildly perceived gap. With this programme, the students working at these societies would reach out to companies relevant to their field of study and attempt to compile a list of summer internship vacancies for their colleagues to apply.
 
 
 ## First Editions
@@ -77,7 +77,7 @@ Since this is my blog, I feel this should be addressed:
 
 * All student data in our hands was only accessible to me, the server admin, via SSH on a reasonably secure server and **has been fully erased** after the last contract was signed;
 * Companies downloaded the student data directly from the platform, unlike previous editions;
-* Since I used the [FenixEdu OAuth2 API](https://fenixedu.org/dev), students who have agreed to login will have a dangling [app authorization on Fenix](https://fenix.tecnico.ulisboa.pt/personal/external-applications/#/authorizations). Unlike other IST apps, OAuth tokens were never persisted. Only the absolute minimum needed information was collected from this API, as can be seen in the [platform source code](https://github.com/migueldemoura/istsi/blob/master/app/src/ISTSI/Controllers/Auth/Fenix.php#L42-L50) and explained in our [terms and conditions](https://istsi.org/files/regulamento.pdf);
+* Since I used the [FenixEdu OAuth2 API](https://fenixedu.org/dev), students who have agreed to login will have a dangling [app authorization on Fenix](https://fenix.tecnico.ulisboa.pt/personal/external-applications/#/authorizations). Unlike other IST apps, OAuth tokens were never persisted. Only the absolute minimum needed information was collected from this API, as can be seen in the [platform source code](https://github.com/migueldemoura/istsi/blob/master/app/src/ISTSI/Controllers/Auth/Fenix.php#L42-L50) and explained in our terms and conditions;
 * The students that were accepted into any given proposal had part of the above information sent to TT@Técnico so the tri-party contract could be written.
 
 I encourage developers of the other popular IST apps to adopt similar strategies.
