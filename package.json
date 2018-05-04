@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "normalize-scss": "^7.0.1",
-    "zooming": "^2.0.0",
-    "turbolinks": "^5.1.1"
+    "turbolinks": "^5.1.1",
+    "zooming": "^2.0.0"
   },
   "devDependencies": {
     "chart.js": "^2.7.2",
