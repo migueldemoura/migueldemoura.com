@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 gem 'autoprefixer-rails', '>= 8.2.0'
 gem 'image_optim', '>= 0.26.1'
-gem 'jekyll', '>= 3.7.3'
+gem 'jekyll', '>= 3.8.1'
 gem 'mini_magick', '>= 4.8.0'
-gem 'uglifier', '>= 4.1.9'
+gem 'uglifier', '>= 4.1.10'
 
 group :jekyll_plugins do
     gem 'jekyll-assets', '>= 3.0.11'
