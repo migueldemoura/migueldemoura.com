@@ -1,1 +1,7 @@
-{% asset '{{ include.path }}' controls loop preload='none' %}
+{% capture poster_path %}{% asset '{{ include.frame }}' @path %}{% endcapture %}
+{% asset '{{ include.path }}'
+    poster='{{ poster_path }}'
+    controls
+    loop
+    preload='none'
+%}
