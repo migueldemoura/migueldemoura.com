@@ -22,6 +22,7 @@
 
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   src: local('Lato Regular'),
        local('Lato-regular'),
        url(font_path('lato/regular.woff2')) format('woff2'),
@@ -32,6 +33,7 @@
 
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   src: local('Lato Bold'),
        local('Lato-700'),
        url(font_path('lato/700.woff2')) format('woff2'),
