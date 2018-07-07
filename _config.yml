@@ -17,8 +17,6 @@ assets:
   defaults:
     js: {integrity: true}
     css: {integrity: true}
-  features:
-    automatic_img_size: false
 collections:
   pages:
     output: true
