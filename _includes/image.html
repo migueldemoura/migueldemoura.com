@@ -4,7 +4,8 @@
             {% asset '{{ include.path }}'
                 srcset:width=200
                 srcset:width=350
-                sizes='(max-width: 240px) 200px, 350px'
+                srcset:width=700
+                sizes='(max-width: 240px) 200px, 350px, 350px 2x'
                 alt='{{ include.alt }}'
                 data-action='zoom'
                 data-zooming-width='{{ assets[include.path].dimensions.width }}'
@@ -15,7 +16,8 @@
                 srcset:width=200
                 srcset:width=440
                 srcset:width=610
-                sizes='(max-width: 240px) 200px, (max-width: 480px) 440px, 610px'
+                srcset:width=1220
+                sizes='(max-width: 240px) 200px, (max-width: 480px) 440px, 610px, 610px 2x'
                 alt='{{ include.alt }}'
                 data-action='zoom'
                 data-zooming-width='{{ assets[include.path].dimensions.width }}'
