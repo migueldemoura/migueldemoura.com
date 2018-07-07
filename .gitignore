@@ -1,7 +1,9 @@
 !.keep
 /_drafts/
 /_site/
+/.bundle/
 /.jekyll-cache/
 /node_modules/
+/ruby_gems/
 Gemfile.lock
 package-lock.json

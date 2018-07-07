@@ -14,8 +14,8 @@
     "stylelint-config-recommended": "^2.1.0"
   },
   "scripts": {
-    "setup": "bundle install && npm install",
+    "setup": "bundle install --path ruby_gems && npm install",
     "serve": "bundle exec jekyll serve",
-    "clean": "rm -rf package-lock.json Gemfile.lock .jekyll-cache/ node_modules/ _site/"
+    "clean": "rm -rf package-lock.json Gemfile.lock node_modules/ _site/ .bundle/ .jekyll-cache/ ruby_gems/"
   }
 }

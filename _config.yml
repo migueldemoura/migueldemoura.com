@@ -40,6 +40,7 @@ exclude:
   - LICENSE-MIT.md
   - Makefile
   - node_modules/
+  - ruby_gems/
   - package-lock.json
   - package.json
   - README.md
