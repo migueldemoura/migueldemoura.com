@@ -22,16 +22,13 @@ assets:
       optim:
         compress:
           pack: true
+          allow_lossy: false
           advpng:
           jpegoptim:
           gifsicle:
-          pngcrush: false
-          pngout: false
-          pngquant: false
-          jhead: false
           jpegrecompress: false
           jpegtran: false
-          optipng: false
+          pngout: false
           svgo: false
 collections:
   pages:
