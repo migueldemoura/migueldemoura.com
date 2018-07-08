@@ -35,5 +35,9 @@
     <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }}"/>
 
     {% asset main.css !type %}
+    <link rel="preload" href="{% asset 'cormorant-garamond/700.woff2' @path %}" as="font">
+    <link rel="preload" href="{% asset 'lato/700.woff2' @path %}" as="font">
+    <link rel="preload" href="{% asset 'lato/regular.woff2' @path %}" as="font">
+
     {% asset main.js defer !type %}
 </head>
