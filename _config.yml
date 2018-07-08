@@ -17,6 +17,22 @@ assets:
   defaults:
     js: {integrity: true}
     css: {integrity: true}
+  plugins:
+    img:
+      optim:
+        compress:
+          pack: true
+          advpng:
+          jpegoptim:
+          gifsicle:
+          pngcrush: false
+          pngout: false
+          pngquant: false
+          jhead: false
+          jpegrecompress: false
+          jpegtran: false
+          optipng: false
+          svgo: false
 collections:
   pages:
     output: true
