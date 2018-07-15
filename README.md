@@ -11,6 +11,8 @@ Fully supported (Desktop and Mobile):
 - Latest Edge version
 - Latest Safari version (required fix [50c4495] as it doesn't support svg 2 href)
 
+Javascript is required for the image zoom effect and faster page transitions.
+
 ### License
 
 Template - `LICENSE-MIT.md`.  
