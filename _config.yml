@@ -24,6 +24,7 @@ assets:
           pack: true
           allow_lossy: false
           advpng:
+            level: 3
           jpegoptim:
           gifsicle:
           jpegrecompress: false
