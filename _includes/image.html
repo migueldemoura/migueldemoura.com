@@ -1,7 +1,7 @@
 <figure{% if include.reduced %} class="reduced"{% endif %}>
     <a href="{% asset '{{ include.path }}' @path %}">
         {% if include.reduced %}
-            {% asset '{{ include.path }}' optim=compress
+            {% asset '{{ include.path }}'
                 srcset:width=200
                 srcset:width=350
                 srcset:width=700
@@ -12,7 +12,7 @@
                 data-zooming-height='{{ assets[include.path].dimensions.height }}'
             %}
         {% else %}
-            {% asset '{{ include.path }}' optim=compress
+            {% asset '{{ include.path }}'
                 srcset:width=200
                 srcset:width=440
                 srcset:width=610
