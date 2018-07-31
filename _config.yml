@@ -21,13 +21,6 @@ collections:
   posts_tags:
     output: true
     permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: posts_tags
-    values:
-      layout: articles-tag
 include:
   - _headers
 exclude:
