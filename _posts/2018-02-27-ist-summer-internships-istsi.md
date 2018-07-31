@@ -11,14 +11,14 @@ One of the most common critiques regarding engineering courses is that they aren
 This setting allowed a fresh initiative to be born by some course-specific student societies in partnership with [TT@Técnico](https://tt.tecnico.ulisboa.pt) - the [IST Summer Internships](https://web.archive.org/web/20170820010152/https://istsi.org/), with the aim of filling this wildly perceived gap. With this programme, the students working at these societies would reach out to companies relevant to their field of study and attempt to compile a list of summer internship vacancies for their colleagues to apply.
 
 
-## First Editions
+### First Editions
 
 A few years after its inception, I joined my course's student society, [NEECIST](https://neecist.org), close to the end of the second semester - the stage where the majority of the work is done for the ISTSI. At the time, we would receive candidate applications by email, parse and verify their contents and only then add everything to separate folders which would afterwards be zipped and sent to each individual company. A lot of work, and one inexcusable for engineering students.
 
 Holding firsthand experience with the previous bottleneck of having to process hundreds of emails manually, I decided to step up my contribution and create a tightly integrated submission platform where students would apply. One that would simplify our work and allow us to pursue more internship vacancies and more companies. That first prompted me to dive into the world of Web Development. Constrained by my faculty's web services, I learned PHP and the usual suspects of the front-end paradigm and eventually released the now superseded submission platform. This second year was a lot easier as we only needed to collect a list of companies and internship proposals to seed the application's database. The rest was automated, allowing us to provide better support, increase user engagement and drive adoption - all things that would make a sales executive scream with joy.
 
 
-## 2017 Edition
+### 2017 Edition
 
 {% include image.html path="istsi/istsi.org.png"
    alt="ISTSI homepage at istsi.org." caption-no="1" caption="ISTSI homepage at istsi.org."
@@ -86,7 +86,7 @@ I encourage developers of the other popular IST apps to adopt similar strategies
 All this was possible thanks to an **incredible team of student volunteers from a multitude of courses**, all working together to make our education better and to ease the contact with the enterprise world. A special thank you also goes out to the TT@Técnico team, which provided crucial support by handling legal contracts between all parties involved. As part of my role as a Microsoft Student Partner (MSP), I was also kindly given a considerable amount of monthly Azure credits by Microsoft, which was extremely useful for hosting a subset of our infrastructure.
 
 
-## Future steps
+### Future steps
 
 After this edition, and the commitment shown by Técnico to help us improve this programme, we will be moving our infrastructure to the hands of the faculty, allowing our team to focus solely on increasing the internship offers and providing better guidance and support to students.
 

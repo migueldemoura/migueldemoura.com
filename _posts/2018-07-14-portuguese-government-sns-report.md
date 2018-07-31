@@ -6,9 +6,9 @@ thumb_image: "sns-1/main.png"
 tags: [security, disclosure, web]
 ---
 
-*This is the **first part** of the [Portuguese Health Service Portal](https://www.sns.gov.pt) disclosure.*
-
-*Summary: It was significantly **harder to report the flaws than to find them**. This is easily the worst experience I've had, and I understand why some opt to just let it go.*
+> **Part 1/2** of the [Portuguese Health Service Portal](https://www.sns.gov.pt) security disclosure.
+>
+> **Summary**: It was significantly **harder to report the flaws than to find them**. This is easily the worst experience I've had, and I understand why some opt to just let it go.
 
 After having analysed web portals/apps from the private [Energy](/posts/edp-vulnerability-disclosure/) and [Health](/posts/cuf-vulnerability-disclosure/) sectors, it is time to delve into a public service instead - the [Portuguese Health Service](https://www.sns.gov.pt) (*Serviço Nacional de Saúde* - SNS). The [SNS Portal](https://servicos.min-saude.pt/utente/) allows Portuguese citizens to view their medical history including, but not limited to, appointments, prescriptions, emergencies, medication, allergies, diseases and vaccines, as well as a considerable amount of personal data.
 
@@ -19,7 +19,7 @@ Some issues were the first ones I had ever stumbled upon, leaving me excited to 
 %}
 
 
-## Security is Hard to Put in Layman's Terms
+### Security is Hard to Put in Layman's Terms
 
 It all started July of last year. While trying to register on the web portal, I noticed that the bits of data necessary for registration amounted to my name, birth date and health number. Knowing these, you could register as another person and access their personal information. Not only are most of these readily available from social media, but they are also imprinted on every Portuguese ID card.
 
@@ -33,7 +33,7 @@ Not too happy with the response, I went back to the web portal and started pokin
 
 As I've said previously, this was the first time I'd reached out to an entity to report a security flaw. I expected them to forward the information to the appropriate department and get a response quickly with an [ETA](https://en.wikipedia.org/wiki/Estimated_time_of_arrival) for a fix. Suffice to say, things didn't go quite as I envisioned.
 
-## Finding a Contact Email via an Android App Package
+### Finding a Contact Email via an Android App Package
 
 I called, I emailed and I waited. One month went by. Tired of waiting, I decided to try to find a different point of contact; clearly the support line wasn't going to cut it. Having had decompiled their android apps searching for some useful endpoints, I figured maybe they left a developer's email somewhere in the metadata.
 
@@ -43,7 +43,7 @@ One of the endpoints was a self-hosted [Sentry](https://sentry.io) instance, an 
    alt="Sentry - Member page." caption-no="3" caption="Sentry - Member page."
 %}
 
-## Real People; no Real Progress
+### Real People; no Real Progress
 
 After finding these precious addresses, I emailed them both right away with the details. I got a great response the next day, provided the full disclosure and was told it had been forwarded to the security team. And I left it there, although with a very rewarding feeling of mission accomplished. But things didn't go as planned, again.
 
@@ -55,7 +55,7 @@ Yet, I was still left with a bitter taste on my mouth since **feature updates we
    alt="Main SNS Portal page - new features." caption-no="4" caption="Main SNS Portal page - new features."
 %}
 
-## Maybe the Data Protection Authority will Help
+### Maybe the Data Protection Authority will Help
 
 At this point, I had discovered a very serious vulnerability on another Portuguese Government web service (not disclosed yet). Wary of how difficult reports had been to public entities, I started searching for alternative ways to follow through and get things fixed.
 A couple web queries later, I learned that each European country has a Data Protection Authority (DPA) who is responsible for, among other duties, conducting investigations on security issues that can lead to disclosure of [PII](https://en.wikipedia.org/wiki/Personally_identifiable_information). The flaws I had found followed every requirement, which meant I was able to ask the Portuguese DPA, [CNPD](https://www.cnpd.pt), to evaluate the case.
@@ -66,7 +66,7 @@ One month and a half later I got a call confirming I could move forward with a c
    alt="CNPD Report page." caption-no="5" caption="CNPD Report page."
 %}
 
-## Maybe the GDPR will Help
+### Maybe the GDPR will Help
 
 After submitting the complaint, I went back to my only reliable contact. Seeing that no update had been given since my last interaction, I asked for a direct address to the security team to ease things up. Unfortunately, I got no response to that message and the following one. Time to try something different.
 
@@ -82,7 +82,7 @@ Security and privacy are two passions of mine so I was naturally bound to enjoy 
 
 I got a response afterwards and provided, yet again, all the details. Since then, one minor flaw has been fixed and the major one can't be exploited.
 
-## Maybe Public Visibility will Help
+### Maybe Public Visibility will Help
 
 We are now 3 days away from a **full year of waiting**. At this precise moment, all my SNS/SPMS tickets are either closed without having been properly addressed, or left to rot in a backlog.
 
@@ -92,13 +92,13 @@ All my attempts to get the vulnerabilities fixed have failed, and I've exhausted
 
 Unlike a common industry practice of waiting just a few months before doing a full disclosure, I gave it 1 year. In retrospective, perhaps that was a naive decision, but I felt I'd be doing a disservice to the same people I wanted to help if I published it.
 
-## Technical Details
+### Technical Details
 
 The second part of this disclosure will detail every flaw. I'll update this one with a link once it's published.
 
 **Maybe there will be no need for another Maybe...**
 
-## Timeline
+### Timeline
 
 | Date                    | Activity
 |-------------------------|------------------------------------------------------------------------------
