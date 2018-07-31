@@ -19,6 +19,9 @@ body {
   line-height: $base-line-height;
   color: $base-font-color;
   padding: 35px;
+  @include breakpoint(extra-small) {
+    padding: 35px 20px;
+  }
 }
 
 // Typography
