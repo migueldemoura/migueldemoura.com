@@ -41,7 +41,6 @@ exclude:
   - package-lock.json
   - package.json
   - README.md
-paginate: 5
 permalink: posts/:slug/
 
 webrick:

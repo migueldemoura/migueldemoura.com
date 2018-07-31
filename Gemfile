@@ -9,6 +9,5 @@ gem 'uglifier', '>= 4.1.14'
 
 group :jekyll_plugins do
     gem 'jekyll-assets', '>= 3.0.11'
-    gem 'jekyll-paginate', '>= 1.1.0'
     gem 'jekyll-sitemap', '>= 1.2.0'
 end
