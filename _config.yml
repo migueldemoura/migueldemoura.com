@@ -14,9 +14,6 @@ assets:
     - node_modules
   gzip: true
   compression: true
-  defaults:
-    js: {integrity: true}
-    css: {integrity: true}
 collections:
   pages:
     output: true
