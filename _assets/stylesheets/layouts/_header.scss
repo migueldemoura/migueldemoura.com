@@ -2,61 +2,40 @@
 // Header
 // =============================================================================
 
-.header-nav {
-  display: block;
-  padding: 75px 0 20px;
-  border-bottom: 1px solid $base-border-color;
-}
-
-.header-logo {
-  display: inline-block;
-  font-family: $serif;
-  font-size: 36px;
-  font-weight: $base-font-weight-medium;
-  color: $header-logo-color;
-  text-decoration: none;
-}
-
-.header-links {
-  float: right;
-  padding: 0;
-  margin: 20px 0 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
-    &:first-child {
-      margin-left: 0;
-    }
-    a {
-      font-size: 18px;
-      color: $header-link-color;
-      svg {
-        width: 18px;
-        height: 18px;
-        fill: $gray;
-      }
-      &:hover svg {
-        fill: $header-link-color-hover;
-      }
+nav {
+  text-align: center;
+  a {
+    padding: 8px 8px;
+    font-size: 14px;
+    border-radius: $base-border-radius;
+    &.subscribe {
+      background: $base-accent-color;
+      color: $white;
+      margin-left: 12px;
     }
   }
 }
 
-@include breakpoint(extra-small) {
-  .header-nav {
-    text-align: center;
-  }
-  .header-links {
-    display: block;
-    float: none;
-    margin: 15px 0 0;
-    text-align: center;
-    li {
-      margin: 0 10px;
-      &:last-child {
-        margin-right: 0;
+header {
+  text-align: center;
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #313131;
+    }
+    img {
+      display: inline-block;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin: 15px 0;
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration-color: $base-font-secondary-color;
       }
     }
   }

@@ -1,4 +1,20 @@
-<footer class="footer">
-    <p class="notice">Security disclosures pending publication: 2</p>
-    <p>© 2018 Miguel de Moura</p>
+<footer>
+    <ul>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
+                {% include svg-icon.html icon="github" %}
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+                {% include svg-icon.html icon="linkedin" %}
+            </a>
+        </li>
+        <li>
+            <a href="mailto:{{ site.social.email }}" title="Email">
+                {% include svg-icon.html icon="email" %}
+            </a>
+        </li>
+    </ul>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</p>
 </footer>

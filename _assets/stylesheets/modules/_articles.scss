@@ -2,218 +2,78 @@
 // Articles
 // =============================================================================
 
-// Article page
-// =============================================================================
-
-.article-header {
-  display: block;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid $base-border-color;
-  p {
-    display: block;
-    margin: 12px 0 10px;
-    font-size: $base-font-size;
-    color: $article-header-description-color;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-.article-list-item {
-  h5 {
-    position: relative;
-    display: block;
-    padding-right: 25px;
-    color: $article-header-title-color;
-    border-bottom: 1px solid transparent;
-    svg {
-      width: 16px;
-      height: 16px;
-      margin: -2px 8px 0 8px;
-      fill: $article-header-title-color;
-      opacity: 0;
-      transition: opacity $base-transition-speed linear;
-    }
-    &:hover svg {
-      opacity: 1;
-    }
-  }
-  a {
-    text-decoration: none;
-  }
-  p {
-    display: block;
-    margin: 12px 0 10px;
-    color: $article-header-description-color;
-  }
-}
-
-.article-share {
-  display: block;
-  a {
-    display: inline-block;
-    margin-right: 12px;
-    vertical-align: middle;
-    svg {
-      fill: $gray;
-      width: 20px;
-      height: 20px;
-    }
-    &:hover svg {
-      fill: $gray-dark;
-    }
-  }
-}
-
-.article-content {
-  display: block;
-  p,
-  ul,
-  ol,
-  img,
-  blockquote {
-    display: block;
-    margin-bottom: 30px;
-  }
-  h2,
-  h3,
-  h4 {
-    display: block;
-    margin-bottom: 10px;
-    font-family: $sans-serif;
-    color: $article-post-titles-color;
-  }
-  blockquote p,
-  figure img {
-    margin-bottom: 0;
-  }
-  figure.reduced {
-    img {
-      max-width: 350px;
-      margin-right: auto;
-      margin-left: auto;
-      @media (max-width: 405px) {
-        max-width: 100%;
-      }
-    }
-    figcaption {
-      text-align: center;
-    }
-  }
-  video {
-    width: 100%;
-  }
-}
-
-.article-list-footer {
-  display: block;
-  span,
-  a {
-    display: inline-block;
-    font-size: 12px;
-    color: $article-footer-color;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-  a {
-    margin-right: 7.5px;
-    color: $article-footer-link-color;
-    &:hover {
-      color: $article-footer-link-color-hover;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.article {
-  display: block;
-  margin: 100px 0;
-}
-
 .article-list {
-  display: block;
-  padding: 0;
-  margin: 50px 0;
-  list-style: none;
-  li {
-    position: relative;
-    display: block;
-    padding: 40px 0;
-    border-bottom: 1px solid $base-border-color;
-    &:last-child {
-      border-bottom: 0;
-    }
-    &.article-pagination {
-      display: table;
-      width: 100%;
-      margin-top: -15px;
+  max-width: 500px;
+  margin: 30px auto;
+  a {
+    font-size: 15px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 25px 0;
       a {
+        color: $base-font-secondary-color;
+      }
+      .article-list-date {
+        float: right;
+        margin: 0 0 0 20px;
+      }
+      time {
         display: inline-block;
-        padding-top: 6px;
-        font-size: 11px;
-        font-weight: $base-font-weight-medium-bold;
-        letter-spacing: .1em;
-        color: $gray;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: color $base-transition-speed linear;
-        svg {
-          width: 16px;
-          height: 16px;
-          margin: -2px 8px 0 8px;
-          fill: $gray;
-        }
-        &:hover svg {
-          fill: $article-paginator-color-hover;
-        }
-        &:hover {
-          color: $article-paginator-color-hover;
-        }
       }
     }
   }
 }
 
-.article-list-divider {
-  margin: 0 15px;
-}
-
-.article-list-tags {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.article-empty {
-  display: block;
-  margin: 100px 0;
-  font-style: italic;
-  color: $gray;
-  text-align: center;
-}
-
-// Paginator
-// =============================================================================
-
-.article-pagination-right {
-  float: right;
-}
-
-// Responsive
-// =============================================================================
-
-@include breakpoint(extra-small) {
-  .article-list-footer {
-    display: block;
+article {
+  max-width: 610px;
+  margin: 0 auto;
+  header {
+    text-align: center;
   }
-  .article-list-divider:last-of-type {
-    display: none;
+  h2 {
+    line-height: 1.4em;
+    font-size: 1.4em;
+    margin-top: 2.5rem;
   }
-  .article-list-tags {
-    display: block;
-    margin-top: -7px;
+  .divider {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      $base-background-accent-color,
+      rgba(255, 255, 255, 0)
+    );
+    height: 1px;
+    margin: 2em 0;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  .article-share {
+    h2 {
+      display: inline;
+    }
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: text-bottom;
+      svg {
+        fill: $base-accent-color;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+section > h2 {
+  h2 {
+    margin-top: 2.5rem;
+    &:first-child {
+      margin-top: 30px;
+    }
   }
 }

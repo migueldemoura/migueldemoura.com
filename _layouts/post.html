@@ -2,26 +2,18 @@
 layout: default
 ---
 
-<article class="article">
-    <header class="article-header">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
-        <div class="article-list-footer">
-            <span class="article-list-date">
-                {{ page.date | date: "%B %-d, %Y" }}
-            </span>
-            <span class="article-list-divider">-</span>
-            <div class="article-list-tags">
-                {% for tag in page.tags %}
-                    <a href="{{ 'tag/' | relative_url }}{{ tag | replace: ' ', '-' | cgi_escape | url_encode }}">{{ tag | capitalize }}</a>
-                {% endfor %}
-            </div>
-        </div>
+<article>
+    <header>
+        <h2>{{ page.title }}</h2>
+        <time>{{ page.date | date: '%B %-d, %Y' }}</time>
     </header>
-    <div class="article-content">
+    <div class="divider"></div>
+    <section>
         {{ content }}
-    </div>
-    <div class="article-share">
+    </section>
+    <div class="divider"></div>
+    <section class="article-share">
+        <h2>Share</h2>
         <a href="https://twitter.com/intent/tweet/?text={{ page.title | cgi_escape | url_encode }}&url={{ page.url | absolute_url }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="twitter" %}
         </a>
@@ -31,5 +23,6 @@ layout: default
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="facebook" %}
         </a>
-    </div>
+    </section>
+    <div class="divider"></div>
 </article>

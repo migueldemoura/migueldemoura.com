@@ -1,7 +1,7 @@
 {% if page.thumb_image %}
     {% capture thumb_image %}{% asset '{{ page.thumb_image }}' @path %}{% endcapture %}
 {% else %}
-    {% capture thumb_image %}{% asset og-image.jpg @path %}{% endcapture %}
+    {% capture thumb_image %}{% asset self.jpg @path %}{% endcapture %}
 {% endif %}
 {% assign thumb_image = thumb_image | absolute_url %}
 <head>

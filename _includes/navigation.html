@@ -1,30 +1,10 @@
-<nav class="header-nav">
-    <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
-    <ul class="header-links">
-        <li>
-            <a href="{{ 'about' | relative_url }}" title="About">
-                {% include svg-icon.html icon="about" %}
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
-                {% include svg-icon.html icon="github" %}
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
-                {% include svg-icon.html icon="linkedin" %}
-            </a>
-        </li>
-        <li>
-            <a href="mailto:{{ site.social.email }}" title="Email">
-                {% include svg-icon.html icon="email" %}
-            </a>
-        </li>
-        <li>
-            <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
-                {% include svg-icon.html icon="rss" %}
-            </a>
-        </li>
-    </ul>
+<header>
+    <a href="{{ '/' | relative_url }}">
+        <img src="{% asset 'self.jpg' @path %}" title="{{ site.name }}">
+        <h1>{{ site.name }}</h1>
+    </a>
+</header>
+<nav>
+    <a href="{{ 'about' | relative_url }}">About</a>
+    <a href="{{ 'feed.xml' | relative_url }}" class="subscribe">Subscribe</a>
 </nav>
