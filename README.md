@@ -1,6 +1,6 @@
 # Personal Blog
 
-This is my personal blog hosted at [migueldemoura.com]. It is built with Jekyll and based on the [Chalk template].
+This is my personal blog hosted at [migueldemoura.com]. It is built with Jekyll and other open source tools.
 
 ### Browser Compatibility
 
@@ -15,7 +15,7 @@ Javascript is required for the image zoom effect and faster page transitions.
 
 ### License
 
-Template - `LICENSE-MIT.md`.  
+Template - `LICENSE-MIT.md`.
 Post content and assets - `LICENSE-CC-BY-SA-4.0.md`.
 
    [Chalk template]: <https://github.com/nielsenramon/chalk>
