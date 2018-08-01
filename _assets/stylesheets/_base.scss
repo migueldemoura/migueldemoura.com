@@ -87,6 +87,9 @@ svg {
 ul,
 ol {
   padding-left: 50px;
+  @include breakpoint(extra-small) {
+    padding-left: 30px;
+  }
 }
 
 blockquote {
