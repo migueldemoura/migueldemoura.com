@@ -3,13 +3,18 @@
 // =============================================================================
 
 // Inline highlighting
+code.highlighter-rouge,
+// Block highlighting
+pre.highlight {
+  background: $base-background-color;
+  border: 1px solid $base-background-accent-color;
+  border-radius: $base-border-radius;
+}
+
 code.highlighter-rouge {
   padding: 2px 4px;
   font-size: 14px;
   color: #d14;
-  background: $base-background-color;
-  border: 1px solid $base-background-accent-color;
-  border-radius: $base-border-radius;
 }
 
 pre.highlight {
@@ -19,8 +24,6 @@ pre.highlight {
   font-size: 14px;
   line-height: 1.8;
   padding: 1.5rem;
-  background-color: $base-background-color;
-  border: 1px solid $base-background-accent-color;
 
   // Highlighting types
   // =============================================================================
