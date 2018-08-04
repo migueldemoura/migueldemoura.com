@@ -11,7 +11,11 @@ sitemap: false
   <main class="notfound">
     <header>
       <a href="{{ '/' | relative_url }}">
-        <img src="{% asset 'self-inverted-grayscale.jpg' @path %}" title="{{ site.name }}">
+        {% asset 'self-inverted-grayscale.jpg'
+          srcset:width="180 2x"
+          srcset:width="90 1x"
+          alt='{{ site.name }}'
+        %}
         <h1>{{ site.name }}</h1>
       </a>
       <p>
