@@ -6,7 +6,7 @@ layout: default
   <div class="divider"></div>
   <header>
     <h2>{{ page.title }}</h2>
-    <time>{{ page.date | date: '%B %-d, %Y' }}</time>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
   </header>
   <section>
     {{ content }}
