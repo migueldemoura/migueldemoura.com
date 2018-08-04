@@ -19,5 +19,9 @@
         color: $base-accent-color;
       }
     }
+    img {
+      filter: grayscale(1);
+      transform: scale(1, -1);
+    }
   }
 }
