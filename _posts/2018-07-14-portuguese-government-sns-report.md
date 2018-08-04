@@ -33,6 +33,7 @@ Not too happy with the response, I went back to the web portal and started pokin
 
 As I've said previously, this was the first time I'd reached out to an entity to report a security flaw. I expected them to forward the information to the appropriate department and get a response quickly with an [ETA](https://en.wikipedia.org/wiki/Estimated_time_of_arrival) for a fix. Suffice to say, things didn't go quite as I envisioned.
 
+
 ### Finding a Contact Email via an Android App Package
 
 I called, I emailed and I waited. One month went by. Tired of waiting, I decided to try to find a different point of contact; clearly the support line wasn't going to cut it. Having had decompiled their android apps searching for some useful endpoints, I figured maybe they left a developer's email somewhere in the metadata.
@@ -42,6 +43,7 @@ One of the endpoints was a self-hosted [Sentry](https://sentry.io) instance, an 
 {% include image.html path="sns-1/sentry.png"
    alt="Sentry - Member page." caption-no="3" caption="Sentry - Member page."
 %}
+
 
 ### Real People; no Real Progress
 
@@ -55,6 +57,7 @@ Yet, I was still left with a bitter taste on my mouth since **feature updates we
    alt="Main SNS Portal page - new features." caption-no="4" caption="Main SNS Portal page - new features."
 %}
 
+
 ### Maybe the Data Protection Authority will Help
 
 At this point, I had discovered a very serious vulnerability on another Portuguese Government web service (not disclosed yet). Wary of how difficult reports had been to public entities, I started searching for alternative ways to follow through and get things fixed.
@@ -65,6 +68,7 @@ One month and a half later I got a call confirming I could move forward with a c
 {% include image.html path="sns-1/cnpd-report.png"
    alt="CNPD Report page." caption-no="5" caption="CNPD Report page."
 %}
+
 
 ### Maybe the GDPR will Help
 
@@ -82,6 +86,7 @@ Security and privacy are two passions of mine so I was naturally bound to enjoy 
 
 I got a response afterwards and provided, yet again, all the details. Since then, one minor flaw has been fixed and the major one can't be exploited.
 
+
 ### Maybe Public Visibility will Help
 
 We are now 3 days away from a **full year of waiting**. At this precise moment, all my SNS/SPMS tickets are either closed without having been properly addressed, or left to rot in a backlog.
@@ -92,11 +97,13 @@ All my attempts to get the vulnerabilities fixed have failed, and I've exhausted
 
 Unlike a common industry practice of waiting just a few months before doing a full disclosure, I gave it 1 year. In retrospective, perhaps that was a naive decision, but I felt I'd be doing a disservice to the same people I wanted to help if I published it.
 
+
 ### Technical Details
 
 The second part of this disclosure will detail every flaw. I'll update this one with a link once it's published.
 
-**Maybe there will be no need for another Maybe...**
+**Maybe there will be no need for another *Maybe*...**
+
 
 ### Timeline
 
