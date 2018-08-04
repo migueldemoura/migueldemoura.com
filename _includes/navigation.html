@@ -1,6 +1,10 @@
 <header id="main-header" data-turbolinks-permanent>
   <a href="{{ '/' | relative_url }}">
-    <img src="{% asset 'self.jpg' @path %}" title="{{ site.name }}" alt="{{ site.name }} Photo">
+    {% asset 'self.jpg'
+      srcset:width="180 2x"
+      srcset:width="90 1x"
+      alt='{{ site.name }}'
+    %}
     <h1>{{ site.name }}</h1>
   </a>
 </header>
