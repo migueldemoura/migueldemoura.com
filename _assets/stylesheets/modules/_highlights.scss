@@ -141,11 +141,6 @@ pre.highlight {
     color: #458;
   }
 
-  // Name.Builtin
-  .nb {
-    color: #0086b3;
-  }
-
   // Name.Class
   .nc {
     font-weight: $base-font-weight-bold;
@@ -170,18 +165,11 @@ pre.highlight {
     color: #555;
   }
 
-  // Name.Tag
-  .nt {
-    color: #000080;
-  }
-
   // Text.Whitespace
   .w {
     color: #bbb;
   }
 
-  // Literal.Number
-  .m,
   // Literal.Number.Float
   .mf,
   // Literal.Number.Hex
@@ -191,12 +179,14 @@ pre.highlight {
   // Literal.Number.Integer.Long
   .il,
   // Literal.Number.Oct
-  .mo {
-    color: #099;
+  .mo,
+  // Literal.Number
+  .m,
+  // Name.Tag
+  .nt {
+    color: #032f62;
   }
 
-  // Literal.String
-  .s,
   // Literal.String.Backtick
   .sb,
   // Literal.String.Char
@@ -213,14 +203,13 @@ pre.highlight {
   .si,
   // Literal.String.Other
   .sx,
-  // Literal.String.Single
-  .s1 {
-    color: #d14;
-  }
-
   // Literal.String.Regex
-  .sr {
-    color: #009926;
+  .sr,
+  // Literal.String.Single
+  .s1,
+  // Literal.String
+  .s {
+    color: #d14;
   }
 
   // Literal.String.Symbol
@@ -228,10 +217,10 @@ pre.highlight {
     color: #990073;
   }
 
-  // Name.Variable
-  .nv,
   // Name.Attribute
   .na,
+  // Name.Builtin
+  .nb,
   // Name.Constant
   .no,
   // Name.Variable.Class
@@ -239,7 +228,9 @@ pre.highlight {
   // Name.Variable.Global
   .vg,
   // Name.Variable.Instance
-  .vi {
-    color: #008080;
+  .vi,
+  // Name.Variable
+  .nv, {
+    color: #005cc5;
   }
 }
