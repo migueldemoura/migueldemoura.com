@@ -10,8 +10,9 @@
   "devDependencies": {
     "chart.js": "^2.7.2",
     "stylelint": "^9.4.0",
-    "stylelint-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-concentric-order": "^3.3.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.2.0"
   },
   "scripts": {
     "setup": "bundle install --path ruby_gems && npm install",

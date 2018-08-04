@@ -2,7 +2,7 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'sha256-aMEFhf1f0sV5Vo7IKWjf/keYM5nQ9akA2pKbZgOo3GQ=' 'sha256-voXja0NHK+kj/CO6kVFGewEz+qyDFbxR+WW6e9vfN3o='; img-src 'self' d33wubrfki0l68.cloudfront.net; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'sha256-4C3zV7Ovj6qKrT1cVwtmfJwQmZoqULqPhd1P1xqY3T8=' 'sha256-voXja0NHK+kj/CO6kVFGewEz+qyDFbxR+WW6e9vfN3o='; img-src 'self' d33wubrfki0l68.cloudfront.net; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'
   Referrer-Policy: no-referrer
   Expect-CT: enforce
 

@@ -3,16 +3,16 @@
 // =============================================================================
 
 nav {
-  text-align: center;
   margin-top: 5px;
+  text-align: center;
   a {
+    border-radius: $base-border-radius;
     padding: 8px 8px;
     font-size: 14px;
-    border-radius: $base-border-radius;
     &.subscribe {
+      margin-left: 12px;
       background: $base-accent-color;
       color: $white;
-      margin-left: 12px;
     }
   }
 }
@@ -32,9 +32,9 @@ header {
       border-radius: 50%;
     }
     h1 {
+      margin: 15px 0;
       font-size: 1.6rem;
       font-weight: 400;
-      margin: 15px 0;
       &:hover,
       &:active,
       &:focus {

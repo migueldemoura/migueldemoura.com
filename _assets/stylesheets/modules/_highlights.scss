@@ -6,24 +6,24 @@
 code.highlighter-rouge,
 // Block highlighting
 pre.highlight {
-  background: $base-background-color;
   border: 1px solid $base-background-accent-color;
   border-radius: $base-border-radius;
+  background: $base-background-color;
 }
 
 code.highlighter-rouge {
   padding: 2px 4px;
-  font-size: 14px;
   color: #d14;
+  font-size: 14px;
 }
 
 pre.highlight {
   margin: 30px 0;
+  padding: 1.5rem;
   overflow: auto;
+  line-height: 1.8;
   font-family: $base-font-family-mono;
   font-size: 14px;
-  line-height: 1.8;
-  padding: 1.5rem;
 
   // Highlighting types
   // =============================================================================
@@ -63,8 +63,8 @@ pre.highlight {
 
   // Error
   .err {
-    color: #a61717;
     background-color: #e3d2d2;
+    color: #a61717;
   }
 
   // Keyword
@@ -84,12 +84,13 @@ pre.highlight {
 
   // Generic.Deleted
   .gd {
-    color: #000;
     background-color: #fdd;
+    color: #000;
+
     // Generic.Deleted.Specific
     .x {
-      color: inherit;
       background-color: #faa;
+      color: inherit;
     }
   }
 
@@ -102,14 +103,14 @@ pre.highlight {
 
   // Generic.Inserted
   .gi {
-    color: #000;
     background-color: #dfd;
+    color: #000;
   }
 
   // Generic.Inserted.Specific
   .gi .x {
-    color: #000;
     background-color: #afa;
+    color: #000;
   }
 
   // Generic.Output
@@ -137,14 +138,14 @@ pre.highlight {
   .kr,
   // Keyword.Type
   .kt {
-    font-weight: $base-font-weight-bold;
     color: #458;
+    font-weight: $base-font-weight-bold;
   }
 
   // Name.Class
   .nc {
-    font-weight: $base-font-weight-bold;
     color: #458;
+    font-weight: $base-font-weight-bold;
   }
 
   // Name.Entity
@@ -156,8 +157,8 @@ pre.highlight {
   .ne,
   // Name.Function
   .nf {
-    font-weight: $base-font-weight-bold;
     color: #900;
+    font-weight: $base-font-weight-bold;
   }
 
   // Name.Namespace

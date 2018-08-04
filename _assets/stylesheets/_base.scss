@@ -13,12 +13,12 @@
 
 body {
   margin: 0 auto;
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  font-size: $base-font-size;
+  padding: 35px;
   line-height: $base-line-height;
   color: $base-font-color;
-  padding: 35px;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
   @include breakpoint(extra-small) {
     padding: 35px 20px;
   }
@@ -65,8 +65,8 @@ h6 {
 }
 
 a {
-  color: $base-accent-color;
   text-decoration: none;
+  color: $base-accent-color;
   &:hover,
   &:active,
   &:focus {
@@ -93,11 +93,11 @@ ol {
 }
 
 blockquote {
+  margin: 40px 0;
   border-left: 5px solid $base-background-accent-color;
   border-radius: $base-border-radius;
-  margin: 40px 0;
-  padding: 5px 30px;
   background: $base-background-color;
+  padding: 5px 30px;
   p {
     margin: 15px 0;
   }
@@ -114,22 +114,22 @@ hr {
 
 img {
   display: block;
-  max-width: 100%;
   border: 0;
   border-radius: $base-border-radius;
+  max-width: 100%;
 }
 
 figure {
-  font-size: 14px;
   margin: 30px 0;
+  font-size: 14px;
   figcaption {
     margin-top: 5px;
   }
   &.reduced {
     img {
-      max-width: 350px;
       margin-right: auto;
       margin-left: auto;
+      max-width: 350px;
       @include breakpoint(extra-small) {
         max-width: 100%;
       }
@@ -141,22 +141,22 @@ figure {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
   thead {
     background: $base-background-color;
   }
   th {
-    text-align: left;
     padding: 6px 10px;
+    text-align: left;
   }
   td {
-    padding: 4px 10px;
     border-top: 1px solid $base-border-color;
+    padding: 4px 10px;
   }
   td:first-child {
-    white-space: nowrap;
     vertical-align: top;
+    white-space: nowrap;
     @include breakpoint(extra-small) {
       white-space: normal;
     }
@@ -164,12 +164,12 @@ table {
 }
 
 time {
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 14px;
 }
 
 ::selection {
-  color: $white;
   background-color: $base-font-secondary-color;
+  color: $white;
 }
