@@ -125,7 +125,7 @@ The second part of this disclosure will detail every flaw. I'll update this one 
 | 2018-03-02 - 2018-03-04 | Major service maintenance. All exploits still working.
 | 2018-03-04              | Filled a complaint to the Portuguese Data Protection Authority.
 | 2018-04-10              | Requested a status update.
-| 2018-05-14              | Contacted the support line. Opened a new ticket with servicedesk@spms.min-saude.pt. Informed SNS that I intended to publish a full disclosure when GDPR came into effect.
+| 2018-05-14              | Contacted the support line. Opened a new ticket with `servicedesk@spms.min-saude.pt`. Informed SNS that I intended to publish a full disclosure when GDPR came into effect.
 | 2018-05-14 - 2018-06-22 | SNS fixes the DOM Based XSS (HTTP GET).
 | 2018-06-22              | Downtime for auth flow improvements. Major authentication flaw doesn't seem exploitable anymore.
 | 2018-06-25              | Contacted the Portuguese Data Protection Authority to get a status update.
