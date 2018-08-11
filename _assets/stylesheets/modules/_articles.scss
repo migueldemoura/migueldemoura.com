@@ -2,33 +2,6 @@
 // Articles
 // =============================================================================
 
-.article-list {
-  margin: 30px auto;
-  max-width: 500px;
-  a {
-    display: block;
-    font-size: 15px;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      margin: 25px 0;
-      a {
-        color: $base-font-secondary-color;
-      }
-      .article-list-date {
-        float: right;
-        margin: 0 0 0 20px;
-      }
-      time {
-        display: inline-block;
-      }
-    }
-  }
-}
-
 article {
   margin: 0 auto;
   max-width: 610px;
@@ -53,6 +26,9 @@ article {
       rgba(255, 255, 255, 0)
     );
     height: 1px;
+    &:first-of-type {
+      margin: 1.7em 0;
+    }
   }
   p {
     margin-bottom: 16px;
@@ -60,6 +36,7 @@ article {
   footer {
     h2 {
       display: inline;
+      margin-right: 15px;
     }
     a {
       display: inline-block;
@@ -74,12 +51,37 @@ article {
   }
 }
 
-section > h2 {
+.article-list {
+  margin: auto;
+  max-width: 500px;
   h2 {
-    margin-top: 2.5rem;
-
-    &:first-child {
-      margin-top: 30px;
+    margin-top: 3rem;
+  }
+  a {
+    display: block;
+    h3 {
+      margin: 0;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: $base-font-weight;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 25px 0;
+      a {
+        color: $base-font-secondary-color;
+      }
+      .article-list-date {
+        float: right;
+        margin: 0 0 0 20px;
+      }
+      time {
+        display: inline-block;
+      }
     }
   }
 }

@@ -20,7 +20,9 @@ permalink: /
           <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d" }}</time>
         </div>
         <div>
-          <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}">
+            <h3>{{ post.title }}</h3>
+          </a>
         </div>
       </li>
     </ul>

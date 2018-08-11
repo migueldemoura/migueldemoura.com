@@ -1,6 +1,6 @@
-<figure{% if include.reduced %} class="reduced"{% endif %}>
+<figure{% if include.vertical %} class="vertical"{% endif %}>
   <a href="{% asset '{{ include.path }}' @path %}">
-    {% if include.reduced %}
+    {% if include.vertical %}
       {% asset '{{ include.path }}'
         srcset:width=200
         srcset:width=350

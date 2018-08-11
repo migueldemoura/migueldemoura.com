@@ -12,15 +12,14 @@
 }
 
 body {
-  margin: 0 auto;
-  padding: 35px;
+  margin: 35px;
   line-height: $base-line-height;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   @include breakpoint(extra-small) {
-    padding: 35px 20px;
+    margin: 35px 20px;
   }
 }
 
@@ -44,7 +43,7 @@ h5,
 h6 {
   margin-bottom: 1rem;
   line-height: 1.25;
-  color: #313131;
+  color: $base-font-secondary-color;
 }
 
 h1 {
@@ -125,7 +124,7 @@ figure {
   figcaption {
     margin-top: 5px;
   }
-  &.reduced {
+  &.vertical {
     img {
       margin-right: auto;
       margin-left: auto;
@@ -153,12 +152,12 @@ table {
   td {
     border-top: 1px solid $base-border-color;
     padding: 4px 10px;
-  }
-  td:first-child {
-    vertical-align: top;
-    white-space: nowrap;
-    @include breakpoint(extra-small) {
-      white-space: normal;
+    &:first-child {
+      vertical-align: top;
+      white-space: nowrap;
+      @include breakpoint(extra-small) {
+        white-space: normal;
+      }
     }
   }
 }

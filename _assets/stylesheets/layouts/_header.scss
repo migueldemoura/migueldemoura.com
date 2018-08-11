@@ -3,11 +3,12 @@
 // =============================================================================
 
 nav {
-  margin-top: 5px;
+  margin-top: 15px;
+  padding: 4px 0;
   text-align: center;
   a {
     border-radius: $base-border-radius;
-    padding: 8px 8px;
+    padding: 8px;
     font-size: 14px;
     &.subscribe {
       margin-left: 12px;
@@ -22,24 +23,25 @@ header {
   a {
     display: inline-block;
     width: 200px;
-    &:hover,
-    &:active,
-    &:focus {
-      color: #313131;
-    }
     img {
       display: inline-block;
       border-radius: 50%;
     }
     h1 {
-      margin: 15px 0;
+      margin: 15px 0 0 0;
       font-size: 1.6rem;
-      font-weight: 400;
+      font-weight: $base-font-weight;
       &:hover,
       &:active,
       &:focus {
-        text-decoration-color: $base-font-secondary-color;
+        outline-color: $base-font-secondary-color;
       }
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      outline-color: $base-font-secondary-color;
+      color: $base-font-secondary-color;
     }
   }
 }
