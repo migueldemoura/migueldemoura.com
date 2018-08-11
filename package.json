@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "chart.js": "^2.7.2",
+    "eslint": "^5.3.0",
     "stylelint": "^9.4.0",
     "stylelint-config-concentric-order": "^3.3.2",
     "stylelint-config-standard": "^18.2.0",
@@ -17,6 +18,7 @@
   "scripts": {
     "setup": "bundle install --path ruby_gems && npm install",
     "serve": "bundle exec jekyll serve",
-    "clean": "rm -rf package-lock.json Gemfile.lock node_modules/ _site/ .bundle/ .jekyll-cache/ ruby_gems/"
+    "clean": "rm -rf package-lock.json Gemfile.lock node_modules/ _site/ .bundle/ .jekyll-cache/ ruby_gems/",
+    "eslint": "eslint ."
   }
 }
