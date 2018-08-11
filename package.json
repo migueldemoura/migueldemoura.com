@@ -19,6 +19,7 @@
     "setup": "bundle install --path ruby_gems && npm install",
     "serve": "bundle exec jekyll serve",
     "clean": "rm -rf package-lock.json Gemfile.lock node_modules/ _site/ .bundle/ .jekyll-cache/ ruby_gems/",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "stylelint": "stylelint ."
   }
 }
