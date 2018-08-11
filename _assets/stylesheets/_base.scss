@@ -121,6 +121,13 @@ img {
 figure {
   margin: 30px 0;
   font-size: 14px;
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
   figcaption {
     margin-top: 5px;
   }
