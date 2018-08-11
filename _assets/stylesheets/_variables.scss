@@ -6,34 +6,34 @@
 // =============================================================================
 
 $base-font-family:
-    // macOS Safari, macOS Firefox, iOS Safari (San Francisco)
-    -apple-system,
-    // macOS Chrome (San Francisco)
-    BlinkMacSystemFont,
-    // Windows
-    'Segoe UI',
-    // Android, Chrome OS
-    Roboto,
-    // KDE
-    Oxygen,
-    // Ubuntu
-    Ubuntu,
-    // GNOME
-    Cantarell,
-    // macOS < 10.11
-    'Helvetica Neue',
-    sans-serif;
+  // macOS Safari, macOS Firefox, iOS Safari (San Francisco)
+  -apple-system,
+  // macOS Chrome (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  'Segoe UI',
+  // Android, Chrome OS
+  Roboto,
+  // KDE
+  Oxygen,
+  // Ubuntu
+  Ubuntu,
+  // GNOME
+  Cantarell,
+  // macOS < 10.11
+  'Helvetica Neue',
+  sans-serif;
 $base-font-family-mono:
-    // macOS >= 10.12
-    'SFMono-Regular',
-    // Windows
-    Consolas,
-    // GNU/Linux Distributions
-    'Liberation Mono',
-    // macOS >= 10.6
-    Menlo,
-    Courier,
-    monospace;
+  // macOS >= 10.12
+  'SFMono-Regular',
+  // Windows
+  Consolas,
+  // GNU/Linux Distributions
+  'Liberation Mono',
+  // macOS >= 10.6
+  Menlo,
+  Courier,
+  monospace;
 $base-font-weight: normal;
 $base-font-weight-bold: bold;
 
