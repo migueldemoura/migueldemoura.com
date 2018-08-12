@@ -109,12 +109,12 @@ The second part of this disclosure will detail every flaw. I'll update this one 
 
 | Date                    | Activity
 |-------------------------|------------------------------------------------------------------------------
-| 2017-07-17              | Contacted the SPMS at `secretariado@spms.min-saude.pt`
-| 2017-07-20              | Contacted the support line. Opened a new ticket with `servicedesk@spms.min-saude.pt`
+| 2017-07-17              | Contacted the SPMS at `secretariado@spms.min-saude.pt`.
+| 2017-07-20              | Contacted the support line. Opened a new ticket with `servicedesk@spms.min-saude.pt`.
 | 2017-07-20 - 2017-08-01 | Contacted the support line multiple times.
 | 2017-08-01              | Ticket labeled as "urgent".
-| 2017-08-11              | Reversed the Android app, found 2 personal emails and contacted them both
-| 2017-08-15              | Contacted the SPMS at `nma@spms.min-saude.pt`
+| 2017-08-11              | Reversed the Android app, found 2 personal emails and contacted them both.
+| 2017-08-15              | Contacted the SPMS at `nma@spms.min-saude.pt`.
 | 2017-08-16              | Got a response from one of the personal emails requesting vulnerability details.
 | 2017-08-16              | Provided complete details to SNS.
 | 2017-08-16              | SNS acknowledges the report. Details sent to the security team.
