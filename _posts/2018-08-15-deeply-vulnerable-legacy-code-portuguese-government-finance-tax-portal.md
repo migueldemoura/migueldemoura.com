@@ -278,7 +278,7 @@ That's where part two comes in.
 | 2018-03-04              | Filled a complaint to the Portuguese Data Protection Authority.
 | 2018-04-27              | Contacted the support line again. Opened another ticket.
 | 2018-05-07 - 2018-05-14 | NIF + Phone Number Enumeration & Security Question Bypass vulnerability is fixed.
-| 2018-05-14              | Contacted the support line again. Provided full details to `asi@at.gov.pt`
+| 2018-05-14              | Contacted the support line again. Provided full details to `asi@at.gov.pt`.
 | 2018-05-17              | Re-sent details email as my SMTP server silently dropped it due to `at.gov.pt`'s lack of TLS support.
 | 2018-06-04              | Arbitrary Account Takeover via NIF vulnerability is fixed.
 | 2018-06-04 - 2018-06-26 | Several other vulnerabilities are fixed.
