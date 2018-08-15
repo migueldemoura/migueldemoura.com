@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CUF - Largest Portuguese Private Health Unit Web Services (MyCUF) - Multiple Vulnerabilities"
+title: "Atomic Web App Takedown - CUF - Portuguese Private Health Unit (MyCUF)"
 description: "Application DOS, Authenticated, Stored XSS and Email HTML Injection"
 thumb_image: "cuf/normal.png"
 tags: [security, disclosure, web]
