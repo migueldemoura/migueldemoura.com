@@ -282,4 +282,4 @@ That's where part two comes in.
 | 2018-05-17              | Re-sent details email as my SMTP server silently dropped it due to `at.gov.pt`'s lack of TLS support.
 | 2018-06-04              | Arbitrary Account Takeover via NIF vulnerability is fixed.
 | 2018-06-04 - 2018-06-26 | Several other vulnerabilities are fixed.
-| 2018-08-15              | Public disclosure.
+| 2018-08-15              | Public disclosure (Part 1/2).
