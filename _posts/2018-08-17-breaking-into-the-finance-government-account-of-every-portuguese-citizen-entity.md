@@ -9,9 +9,9 @@ tags: [security, disclosure, web]
 > **Part 2/2** of the [Portuguese Finance & Tax Portal](https://www.portaldasfinancas.gov.pt) security disclosure.
 > Reading the [first part]({{ '/posts/deeply-vulnerable-legacy-code-portuguese-government-finance-tax-portal' | relative_url }}) is recommended.
 >
-> **Summary**: I found a very serious vulnerability in the Portuguese Government's Finance & Tax Portal which allowed anyone to access, in just a couple of seconds, any citizen's account. Corporations and any other entity with a Tax Number were also affected. A video demonstration is included at the end of the article.
+> **Summary**: I found a very serious vulnerability in the Portuguese Government's Finance & Tax Portal which allowed anyone to access, in just a couple of seconds, any citizen's account. Corporations and any other entity with a tax number were also affected. A video demonstration is included at the end of the article.
 
-In this post I will take a look at the [Portuguese Finance Portal Central Authentication System](https://www.acesso.gov.pt), specifically at the most common authentication method - NIF and Password.
+In this post I will take a look at the [Portuguese Finance Portal Central Authentication System](https://www.acesso.gov.pt), specifically at the most common authentication method - tax number (NIF) and password.
 
 Like the previous post, please note this isn't an extensive analysis of the authentication system. It is clear to me that with more time and perhaps access to the source code, I would find a lot more design and logic flaws. I also didn't include account DOS vulnerabilities or most bruteforce attacks.
 
