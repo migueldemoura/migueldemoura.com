@@ -4,8 +4,9 @@
   <canvas id="canvas1"></canvas>
   <canvas id="canvas2"></canvas>
   <script>
-    var color = Chart.helpers.color;
-    var optionsBase = {
+    let charts = [];
+    let color = Chart.helpers.color;
+    let optionsBase = {
       legend: {
         position: 'top'
       },
@@ -29,7 +30,7 @@
         }]
       }
     };
-    var dataBase = {
+    let dataBase = {
       datasets: [{
         label: '2015',
         backgroundColor: color('rgb(1, 191, 194)').alpha(0.5).rgbString(),
@@ -48,10 +49,10 @@
       }]
     };
 
-    var data = [],
+    let data = [],
       chart = [],
       options = [];
-    var values = [
+    let values = [
       [
         [68],
         [71],
@@ -68,7 +69,7 @@
         [3577], 'Applications'
       ]
     ]
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       data[i] = JSON.parse(JSON.stringify(dataBase));
       data[i].datasets[0].data = values[i][0];
       data[i].datasets[1].data = values[i][1];

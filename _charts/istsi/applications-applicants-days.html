@@ -2,7 +2,7 @@
   <script src="../../node_modules/chart.js/dist/Chart.js"></script>
   <canvas id="canvas"></canvas>
   <script>
-    var color = Chart.helpers.color;
+    let color = Chart.helpers.color;
     new Chart(document.getElementById('canvas').getContext('2d'), {
       type: 'bar',
       data: {
