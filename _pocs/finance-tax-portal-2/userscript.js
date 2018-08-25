@@ -19,12 +19,12 @@
   let spoofedName = 'AUTORIDADE TRIBUTÁRIA E ADUANEIRA';
 
   if (window.location.href === 'https://www.acesso.gov.pt/v2/login') {
-    let xsrf_token = document.querySelector('input[name="_csrf"]').value;
+    let xsrfToken = document.querySelector('input[name="_csrf"]').value;
     let realForm = document.createRange().createContextualFragment(`
       <form name="realForm" style="display: none" action="login" method="POST">
         <input name="partID" value="PFAP">
         <input name="authVersion" value="2">
-        <input name="_csrf" value="${xsrf_token}">
+        <input name="_csrf" value="${xsrfToken}">
         <input name="selectedAuthMethod" value="N">
         <input name="username" value="${realNif}">
         <input name="password" value="${realPassword}">
