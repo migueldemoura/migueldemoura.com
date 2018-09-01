@@ -26,3 +26,11 @@
     @warn 'The parameter #{$val} is not valid';
   }
 }
+
+@mixin hover-active-focus {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}

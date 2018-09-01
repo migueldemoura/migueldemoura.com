@@ -21,6 +21,10 @@ nav {
 header {
   text-align: center;
   a {
+    @include hover-active-focus {
+      outline-color: $base-font-secondary-color;
+      color: $base-font-secondary-color;
+    }
     display: inline-block;
     width: 200px;
     img {
@@ -30,20 +34,12 @@ header {
       height: 90px;
     }
     h1 {
+      @include hover-active-focus {
+        outline-color: $base-font-secondary-color;
+      }
       margin: 15px 0 0 0;
       font-size: 1.6rem;
       font-weight: $base-font-weight;
-      &:hover,
-      &:active,
-      &:focus {
-        outline-color: $base-font-secondary-color;
-      }
-    }
-    &:hover,
-    &:active,
-    &:focus {
-      outline-color: $base-font-secondary-color;
-      color: $base-font-secondary-color;
     }
   }
 }

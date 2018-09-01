@@ -12,12 +12,10 @@
     p {
       margin-top: 15px;
       a {
+        @include hover-active-focus {
+          color: $base-accent-color;
+        }
         display: inline;
-      }
-      a:hover,
-      a:active,
-      a:focus {
-        color: $base-accent-color;
       }
     }
     img {
