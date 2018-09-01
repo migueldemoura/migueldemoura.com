@@ -44,7 +44,7 @@ webrick:
     X-Content-Type-Options: "nosniff"
     X-Frame-Options: "DENY"
     X-XSS-Protection: "1; mode=block"
-    Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self' 'sha256-ULqg2QmM77reE18kJ2BHOWO1vCvK9PFYIcRJ+P5SSpE=' 'sha256-voXja0NHK+kj/CO6kVFGewEz+qyDFbxR+WW6e9vfN3o='; img-src 'self' d33wubrfki0l68.cloudfront.net; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'"
+    Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self' 'sha256-ULqg2QmM77reE18kJ2BHOWO1vCvK9PFYIcRJ+P5SSpE=' 'sha256-voXja0NHK+kj/CO6kVFGewEz+qyDFbxR+WW6e9vfN3o='; img-src 'self' d33wubrfki0l68.cloudfront.net; media-src 'self' d33wubrfki0l68.cloudfront.net; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'"
     Feature-Policy: "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; usb 'none'; vr 'none'"
     Referrer-Policy: "no-referrer"
     Expect-CT: "enforce"
