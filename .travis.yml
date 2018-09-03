@@ -1,0 +1,24 @@
+language: ruby
+rvm:
+  - 2.4
+  - 2.5
+node_js:
+  - node
+
+sudo: false
+
+cache: bundler
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+install:
+  - npm run setup
+script:
+  - npm run eslint
+  - npm run stylelint
+  - npm run build
+
+notifications:
+  email: false
