@@ -265,7 +265,7 @@ A more sophisticated attacker would chain most of the vulnerabilities described,
 
 But no matter how little interaction is needed, the user always has a chance.
 
-That's where part two comes in.
+That's where [part 2]({{ '/posts/breaking-into-the-finance-government-account-of-every-portuguese-citizen-entity' | relative_url }}) comes in.
 
 
 ### Timeline
