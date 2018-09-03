@@ -16,9 +16,11 @@ env:
 install:
   - npm run setup
 script:
-  - npm run eslint
-  - npm run stylelint
+  - npm run lint:scss
+  - npm run lint:js
+  - npm run lint:md
   - npm run build
+  - npm run lint:html
 
 notifications:
   email: false
