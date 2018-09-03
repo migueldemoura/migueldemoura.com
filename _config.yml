@@ -36,7 +36,7 @@ collections:
     output: true
     permalink: /:path
   posts_tags:
-    output: true
+    output: false
     permalink: /tag/:slug/
 include:
   - _headers
