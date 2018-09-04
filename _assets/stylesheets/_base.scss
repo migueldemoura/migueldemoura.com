@@ -107,15 +107,15 @@ hr {
   border-bottom: 1px solid $base-border-color;
 }
 
+img,
+video {
+  width: 100%;
+}
+
 img {
   display: block;
   border: 0;
   border-radius: $base-border-radius;
-  max-width: 100%;
-}
-
-video {
-  max-width: 100%;
 }
 
 figure {
