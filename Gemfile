@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '>= 2.4'
+ruby '2.5.1'
 
 gem 'autoprefixer-rails', '>= 9.1.3'
 gem 'image_optim_pack', '>= 0.5.1'
