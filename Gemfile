@@ -4,7 +4,7 @@ ruby '2.5.1'
 
 gem 'autoprefixer-rails', '>= 9.1.4'
 gem 'image_optim_pack', '>= 0.5.1'
-gem 'image_optim', '>= 0.26.2'
+gem 'image_optim', '>= 0.26.3'
 gem 'jekyll', '>= 3.8.4'
 gem 'mini_magick', '>= 4.9.2'
 gem 'uglifier', '>= 4.1.19'
