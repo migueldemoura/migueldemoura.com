@@ -1,20 +1,18 @@
 ---
 layout: post
 title: "Harder to Report than to Find Security Vulnerabilities - Portuguese Government"
-description: "Part 1/2 - Portuguese National Health Service Web Services Security Disclosure"
-thumb_image: "sns-1/main.png"
+description: "Portuguese National Health Service Web Services Security Disclosure"
+thumb_image: "sns/main.png"
 tags: [security, disclosure, web]
 ---
 
-> **Part 1/2** of the [Portuguese Health Service Portal](https://www.sns.gov.pt) security disclosure.
->
-> **Summary**: It was significantly **harder to report the flaws than to find them**. This is easily the worst experience I've had, and I understand why some opt to just let it go.
+> **Update**: Since publishing this article, I’ve decided against disclosing the technical details behind all the flaws I found. This was part 1/2 and only covers the reporting experience.
 
 After having analysed web portals/apps from the private [Energy](/posts/edp-vulnerability-disclosure/) and [Health](/posts/cuf-vulnerability-disclosure/) sectors, it is time to delve into a public service instead - the [Portuguese Health Service](https://www.sns.gov.pt) (*Serviço Nacional de Saúde* - SNS). The [SNS Portal](https://servicos.min-saude.pt/utente/) allows Portuguese citizens to view their medical history including, but not limited to, appointments, prescriptions, emergencies, medication, allergies, diseases and vaccines, as well as a considerable amount of personal data.
 
 Some issues were the first ones I had ever stumbled upon, leaving me excited to reach out and have them fixed. This past year, however, has taught me that **reporting security vulnerabilities can be a very unpleasant task**.
 
-{% include image.html path="sns-1/main.png"
+{% include image.html path="sns/main.png"
    alt="Main SNS page." caption-no="1" caption="Main SNS page."
 %}
 
@@ -25,7 +23,7 @@ It all started July of last year. While trying to register on the web portal, I 
 
 So I emailed and called the SNS government services (SPMS) to explain the situation. Perhaps unsurprisingly, the person who answered the phone continuously dismissed my claims, arguing that a few digits inscribed on a card were personal and private, and that it was the **owner's responsibility to prevent anyone from reading them**. This is preposterous for several reasons, one of them being that we are constantly required by government agencies to *scan* our ID card and send it via insecure methods to prove our identity. To affirm that such details are private and equatable to a password is ingenuous, complete nonsense and miss the impracticalities involved. **ID numbers provide identification, not authentication**!
 
-{% include image.html path="sns-1/report-contact.png"
+{% include image.html path="sns/report-contact.png"
    alt="SNS Report contacts page." caption-no="2" caption="SNS Report contacts page."
 %}
 
@@ -40,7 +38,7 @@ I called, I emailed and I waited. One month went by. Tired of waiting, I decided
 
 One of the endpoints was a self-hosted [Sentry](https://sentry.io) instance, an error tracker and monitoring tool for developers. When I tried accessing its home page, I was presented with a login form. Luckily enough, registrations were left wide open, allowing me to register a dummy account with a disposable email. After logging-in, I navigated to the members tab when, lo and behold, I found 2 emails of real people!
 
-{% include image.html path="sns-1/sentry.png"
+{% include image.html path="sns/sentry.png"
    alt="Sentry - Member page." caption-no="3" caption="Sentry - Member page."
 %}
 
@@ -53,7 +51,7 @@ Four and a half months later, already in 2018 and without any news, I emailed th
 
 Yet, I was still left with a bitter taste on my mouth since **feature updates were constantly being rolled out, yet not even a patch to disable the vulnerable functionality had been issued.**
 
-{% include image.html path="sns-1/main-portal.png"
+{% include image.html path="sns/main-portal.png"
    alt="Main SNS Portal page - new features." caption-no="4" caption="Main SNS Portal page - new features."
 %}
 
@@ -65,7 +63,7 @@ A couple web queries later, I learned that each European country has a Data Prot
 
 One month and a half later I got a call confirming I could move forward with a complaint, which I promptly did.
 
-{% include image.html path="sns-1/cnpd-report.png"
+{% include image.html path="sns/cnpd-report.png"
    alt="CNPD Report page." caption-no="5" caption="CNPD Report page."
 %}
 
@@ -78,7 +76,7 @@ During 2017, I participated in an entrepreneurship competition hosted by Microso
 
 Security and privacy are two passions of mine so I was naturally bound to enjoy learning about GDPR's implications and the complex paradigm shift about to be felt by businesses. One thing that stood out the most from my interactions and research was that the ones aware of it were visibly scared, presumably by how most infographics highlighted the substantial fines in a thick font. It's almost as if they had PTSD.
 
-{% include image.html path="sns-1/gdpr.png"
+{% include image.html path="sns/gdpr.png"
    alt="Portuguese Government bulletin on GDPR." caption-no="6" caption="Portuguese Government bulletin on GDPR."
 %}
 
@@ -96,13 +94,6 @@ Two weeks ago I called the CNPD for a status update on my complaint and was aske
 All my attempts to get the vulnerabilities fixed have failed, and I've exhausted my options. Since the authentication mechanism through which the worst vulnerability could be exploited is currently broken, I have decided to release this information.
 
 Unlike a common industry practice of waiting just a few months before doing a full disclosure, I gave it 1 year. In retrospective, perhaps that was a naive decision, but I felt I'd be doing a disservice to the same people I wanted to help if I published it.
-
-
-### Technical Details
-
-The second part of this disclosure will detail every flaw. I'll update this one with a link once it's published.
-
-**Maybe there will be no need for another *Maybe*...**
 
 
 ### Timeline
@@ -129,4 +120,4 @@ The second part of this disclosure will detail every flaw. I'll update this one 
 | 2018-05-14 - 2018-06-22 | SNS fixes the DOM Based XSS (HTTP GET).
 | 2018-06-22              | Downtime for auth flow improvements. Major authentication flaw doesn't seem exploitable anymore.
 | 2018-06-25              | Contacted the Portuguese Data Protection Authority to get a status update.
-| 2018-07-14              | Public disclosure (Part 1/2).
+| 2018-07-14              | Public disclosure.
