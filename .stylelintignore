@@ -1,9 +1,9 @@
+/_deploy/
 /_site/
 /.bundle/
 /.jekyll-cache/
 /node_modules/
 /ruby_gems/
-_headers
 *.*
 !*.css
 !*.scss

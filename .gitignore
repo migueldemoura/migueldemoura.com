@@ -1,4 +1,6 @@
 !.keep
+.env
+/_deploy/
 /_drafts/
 /_site/
 /.bundle/
