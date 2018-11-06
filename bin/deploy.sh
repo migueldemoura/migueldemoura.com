@@ -40,11 +40,10 @@ find . -name '*.png' -type f -exec sh -c 'zopflipng -y -m "$1" "$1"' _ {} \;
 
 # Remove Extraneous Files
 find . -name '*.gz' -type f -delete
-rm 'assets/.sprockets-manifest-*.json'
+rm assets/.sprockets-manifest-*.json
 
 # Sync Build with Production
 rsync -av --delete . "${DEST_PATH:?}/"
 
-# Cleanup and Remove Freezed Build
-rm -rf "${ROOT_PATH:?}/${SRC_PATH_TMP:?}/"
+# Cleanup
 npm run clean
