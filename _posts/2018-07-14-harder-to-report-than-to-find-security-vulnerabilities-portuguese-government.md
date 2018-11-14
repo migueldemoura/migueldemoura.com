@@ -8,7 +8,7 @@ tags: [security, disclosure, web]
 
 > **Update**: Since publishing this article, I’ve decided against disclosing the technical details behind all the flaws I found. This was part 1/2 and only covers the reporting experience.
 
-After having analysed web portals/apps from the private [Energy](/posts/edp-vulnerability-disclosure/) and [Health](/posts/cuf-vulnerability-disclosure/) sectors, it is time to delve into a public service instead - the [Portuguese Health Service](https://www.sns.gov.pt) (*Serviço Nacional de Saúde* - SNS). The [SNS Portal](https://servicos.min-saude.pt/utente/) allows Portuguese citizens to view their medical history including, but not limited to, appointments, prescriptions, emergencies, medication, allergies, diseases and vaccines, as well as a considerable amount of personal data.
+After having analysed web portals/apps from the private [Energy](/posts/accessing-every-customers-data-sms-impersonation-edp-portuguese-electric-gas-operator-edponline) and [Health](/posts/atomic-web-app-takedown-cuf-portuguese-private-health-unit-mycuf) sectors, it is time to delve into a public service instead - the [Portuguese Health Service](https://www.sns.gov.pt) (*Serviço Nacional de Saúde* - SNS). The [SNS Portal](https://servicos.min-saude.pt/utente/) allows Portuguese citizens to view their medical history including, but not limited to, appointments, prescriptions, emergencies, medication, allergies, diseases and vaccines, as well as a considerable amount of personal data.
 
 Some issues were the first ones I had ever stumbled upon, leaving me excited to reach out and have them fixed. This past year, however, has taught me that **reporting security vulnerabilities can be a very unpleasant task**.
 
