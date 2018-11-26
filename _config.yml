@@ -23,7 +23,7 @@ collections:
     permalink: /:path
   posts_tags:
     output: false
-    permalink: /tag/:slug/
+    permalink: /tag/:slug
 exclude:
   - bin/
   - Gemfile

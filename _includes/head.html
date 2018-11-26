@@ -31,7 +31,11 @@
 
   <meta name="twitter:card" content="summary">
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.url == '/' %}
+    <link rel="canonical" href="{{ site.url }}">
+  {% else %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% endif %}
 
   <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
   <link rel="icon" type="image/png" sizes="32x32" href="{% asset favicon-32x32.png @path %}">
