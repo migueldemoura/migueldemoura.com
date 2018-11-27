@@ -11,8 +11,8 @@ SRC_PATH="${ROOT_PATH:?}/_site"
 SRC_PATH_TMP="${ROOT_PATH:?}/_deploy"
 
 if [[ -z "$DEST_PATH" ]]; then
-  echo "\$DEST_PATH cannot be empty"
-  exit -1
+  echo "\$DEST_PATH cannot be empty" >&2
+  exit 1
 fi
 
 export JEKYLL_ENV=production
