@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '>=2.5'
+ruby '>=2.6'
 
-gem 'autoprefixer-rails', '>= 9.4.3'
+gem 'autoprefixer-rails', '>= 9.4.7'
 gem 'jekyll', '>= 3.8.5'
 gem 'mini_magick', '>= 4.9.2'
 gem 'uglifier', '>= 4.1.20'
