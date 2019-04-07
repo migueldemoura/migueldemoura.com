@@ -8,9 +8,9 @@
     "zooming": "^2.1.1"
   },
   "devDependencies": {
-    "chart.js": "^2.7.3",
-    "eslint": "^5.14.0",
-    "htmlhint": "^0.10.1",
+    "chart.js": "^2.8.0",
+    "eslint": "^5.16.0",
+    "htmlhint": "~0.11.0",
     "remark-cli": "^6.0.1",
     "remark-lint": "^6.0.4",
     "remark-preset-lint-consistent": "^2.0.2",
@@ -20,7 +20,7 @@
     "stylelint": "^9.10.1",
     "stylelint-config-concentric-order": "^3.4.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.3"
+    "stylelint-scss": "^3.5.4"
   },
   "scripts": {
     "setup": "bundle install --path ruby_gems && npm install",
