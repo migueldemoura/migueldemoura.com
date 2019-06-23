@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '>=2.6'
 
-gem 'autoprefixer-rails', '>= 9.5.1'
+gem 'autoprefixer-rails', '>= 9.6.0'
 gem 'jekyll', '>= 3.8.5'
 gem 'mini_magick', '>= 4.9.3'
 gem 'uglifier', '>= 4.1.20'
