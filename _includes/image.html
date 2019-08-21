@@ -10,6 +10,7 @@
         data-action='zoom'
         data-zooming-width='{{ assets[include.path].dimensions.width }}'
         data-zooming-height='{{ assets[include.path].dimensions.height }}'
+        loading='lazy'
       %}
     {% else %}
       {% if assets[include.path].dimensions.width == 610 %}
@@ -22,6 +23,7 @@
           data-action='zoom'
           data-zooming-width='{{ assets[include.path].dimensions.width }}'
           data-zooming-height='{{ assets[include.path].dimensions.height }}'
+          loading='lazy'
         %}
       {% else %}
         {% asset '{{ include.path }}'
@@ -34,6 +36,7 @@
           data-action='zoom'
           data-zooming-width='{{ assets[include.path].dimensions.width }}'
           data-zooming-height='{{ assets[include.path].dimensions.height }}'
+          loading='lazy'
         %}
       {% endif %}
     {% endif %}
