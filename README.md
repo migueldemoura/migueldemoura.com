@@ -1,7 +1,5 @@
 # Personal Blog
 
-[![Build Status](https://travis-ci.com/migueldemoura/migueldemoura.com.svg?branch=master)](https://travis-ci.com/migueldemoura/migueldemoura.com)
-
 This is my personal blog hosted at [migueldemoura.com]. It is built with Jekyll and other open source tools.
 
 ### Browser Compatibility
