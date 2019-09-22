@@ -1,5 +1,7 @@
 # Personal Blog
 
+[![Build Status](https://github.com/migueldemoura/migueldemoura.com/workflows/build/badge.svg)](https://github.com/migueldemoura/migueldemoura.com/actions)
+
 This is my personal blog hosted at [migueldemoura.com]. It is built with Jekyll and other open source tools.
 
 ### Browser Compatibility
