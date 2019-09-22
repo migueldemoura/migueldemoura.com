@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '>=2.6'
 
-gem 'autoprefixer-rails', '>= 9.6.0'
-gem 'jekyll', '>= 3.8.5'
-gem 'mini_magick', '>= 4.9.3'
+gem 'autoprefixer-rails', '>= 9.6.1.1'
+gem 'jekyll', '>= 3.8.6'
+gem 'mini_magick', '>= 4.9.5'
 gem 'uglifier', '>= 4.1.20'
 
 group :jekyll_plugins do
