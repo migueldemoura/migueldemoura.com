@@ -1,0 +1,26 @@
+name: Test
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - run: |
+          npm run setup
+      - run: |
+          npm run lint:sh
+          npm run lint:scss
+          npm run lint:js
+          npm run lint:md
+          npm run build
+          npm run lint:html
