@@ -6,7 +6,7 @@ set -e
 # shellcheck disable=SC1091
 source .env
 
-ROOT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")"; pwd -P)/../
+ROOT_PATH=$(cd "$(dirname "$0")"; pwd -P)/../
 SRC_PATH="${ROOT_PATH:?}/_site"
 SRC_PATH_TMP="${ROOT_PATH:?}/_deploy"
 
@@ -36,7 +36,7 @@ cd "${SRC_PATH_TMP:?}/"
 
 # Optimize Images
 find . -name '*.jpg' -type f -exec sh -c 'jpegoptim "$1" --strip-all --all-progressive' _ {} \;
-find . -name '*.png' -type f -exec sh -c 'zopflipng -y -m "$1" "$1"' _ {} \;
+find . -name '*.png' -type f -exec sh -c 'zopfli -y -m "$1" "$1"' _ {} \;
 
 # Remove Extraneous Files
 find . -name '*.gz' -type f -delete
