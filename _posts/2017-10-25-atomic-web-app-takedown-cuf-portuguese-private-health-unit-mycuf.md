@@ -17,13 +17,9 @@ CUF is the largest private health unit in Portugal. It has strived to improve it
 Unfortunately, such efforts lacked proper security auditing, resulting in several flaws that compromise the service.
 
 
-### Poor Design
+### Questionable Design
 
-The JavaScript code is unstructured, or rather structured in an unstructured manner, so much that I must confess it didn't take long before I gave up trying to find holes in it. It's a new kind of security, security through sloppiness. Why bother with security when you can simply piss off the attacker?
-
-The web app also uses a gateway endpoint route for all XHRs, and they went out of their way to invent a new data parameter delimiter for requests. Sure, go ahead and reinvent the wheel, just don't forget about making it roll.
-
-After a first inspection, I registered an account with a random fiscal number and noticed that my session expired after refreshing the page, something I had to do given the painfully slow loading times and the occasional freeze. Upon a quick verification, I noticed that the session data was stored in JavaScript objects, hence the reset upon reload.
+After a first inspection, I registered an account with a random fiscal number and noticed that my session expired after refreshing the page, something I had to do given the slow loading times and the occasional freeze. Upon a quick verification, I noticed that the session data was stored in JavaScript objects, hence the reset upon reload.
 
 I can see the argument for this approach as it should safeguard those less technical from prying eyes after forgetting to log out. It also makes XSRF attacks impossible and eliminates other cookie-related vectors. But one really has to wonder why there is no button to toggle this state, the common "remember me" option (guess what, there's a setting deep in the code to do exactly this - but it's disabled). I would argue that the terrible UX tradeoff isn't worth it.
 
@@ -42,7 +38,7 @@ curl -X POST \
   -d '|0|0|0|1deviceUUID|0|1encoder.compress|0|1encoder.maxsize|1STRIPPED||STRIPPED|1modelKey|1STRIPPED||||STRIPPED|1userAgent|11.1708171500|1appVersion|110.3|1version|STRIPPED|1key|314|1channel|10||true||3||10|1timezone|1en|1language|1vidaguest|1group|1vidamyapp|1orgunit|1vidacare|1password|1vidacare|1user|D15|L1|30|L4'
 ```
 
-I stripped most headers and trimmed the data string to keep it compact. As you may have noticed, there's a user, `vidacare`, and password, `vidacare`, being sent via this request. These appear to be part of a guest group, `vidaguest`, which I'm *guess*ing is the default account for non-logged-in users. I also noticed that without this request, the page wouldn't load. Effectively, they are authenticating a guest user client-side, providing its credentials (you can use them to log in as well), instead of doing so server-side and sending only the result to the client. They are going all in with the [SPA](https://en.wikipedia.org/wiki/Single-page_application) craze and forgot about the simple things.
+I stripped most headers and trimmed the data string to keep it compact. As you may have noticed, there's a user, `vidacare`, and password, `vidacare`, being sent via this request. These appear to be part of a guest group, `vidaguest`, which I'm guessing is the default account for non-logged-in users. I also noticed that without this request, the page wouldn't load. Effectively, they are authenticating a guest user client-side, providing its credentials (you can use them to log in as well), instead of doing so server-side and sending only the result to the client. They are going all in with the [SPA](https://en.wikipedia.org/wiki/Single-page_application) craze and forgot about the simple things.
 
 At this point, and if we think alike, you're wondering whether there is a way to change the guest password and make the request fail, therefore locking the application.
 
