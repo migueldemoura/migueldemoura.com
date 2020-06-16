@@ -16,8 +16,8 @@ assets:
   gzip: true
   compression: true
   defaults:
-    js: {integrity: true}
-    css: {integrity: false}
+    js: { integrity: true }
+    css: { integrity: false }
 collections:
   pages:
     output: true
@@ -44,5 +44,6 @@ webrick:
     X-Frame-Options: "DENY"
     X-XSS-Protection: "1; mode=block"
     Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self' 'sha256-W8bJE+kUIdtg4j8sSoSZx6tW1A4lxbU9Lk2ApHWmX3U=' 'sha256-9eNozulJZxyDtPu6aYoSNZbifcLFJQt6JoN4+Zvszls='; img-src 'self'; media-src 'self'; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'"
+    Cross-Origin-Resource-Policy: "same-site"
     Feature-Policy: "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; usb 'none'; vr 'none'"
     Referrer-Policy: "no-referrer"
