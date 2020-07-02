@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Accessing Every Customer's Data & SMS Impersonation - EDP - Portuguese Electric & Gas Operator (EDPOnline)"
+title: "Accessing Every Customer's Data &amp; SMS Impersonation - EDP - Portuguese Electric &amp; Gas Operator (EDPOnline)"
 description: "Several PII Leaks (NIF + Full Name + Email + Phone Number), SMS Injection"
 thumb_image: "edp/main.png"
 tags: [security, disclosure, web]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deeply Vulnerable Legacy Code - Portuguese Government Finance & Tax Portal"
+title: "Deeply Vulnerable Legacy Code - Portuguese Government Finance &amp; Tax Portal"
 description: "Part 1/2 - Multiple Reflected XSS, Open Redirects, XSRF"
 thumb_image: "finance-tax-portal-1/main.png"
 tags: [security, disclosure, web]

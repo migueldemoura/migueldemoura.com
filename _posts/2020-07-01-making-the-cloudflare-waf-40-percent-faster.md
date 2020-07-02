@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Breaking into the Finance Government Account of Every Portuguese Citizen &amp; Entity"
+title: "Making the Cloudflare WAF 40% faster"
 description: "Part 2/2 - Arbitrary Account Takeover, PII Leaks (NIF + Phone Number), Reflected XSS"
 thumb_image: "finance-tax-portal-2/main.png"
-tags: [security, disclosure, web]
+external: true
+tags: [security, performance]
 ---
 
 > **Part 2/2** of the [Portuguese Finance & Tax Portal](https://www.portaldasfinancas.gov.pt) security disclosure.
