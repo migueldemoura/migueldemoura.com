@@ -21,7 +21,7 @@ permalink: /
         </div>
         <div>
           <a href="{{ post.url | relative_url }}">
-            <h3>{{ post.title }}</h3>
+            <h3>{% if post.external %}<b>External</b> - {% endif %}{{ post.title }}</h3>
           </a>
         </div>
       </li>
