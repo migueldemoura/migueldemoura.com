@@ -10,5 +10,4 @@ gem 'sprockets', '~> 3.7.2'
 
 group :jekyll_plugins do
   gem 'jekyll-assets', '>= 3.0.12'
-  gem 'jekyll-sitemap', '>= 1.4.0'
 end
