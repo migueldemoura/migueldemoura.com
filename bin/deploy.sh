@@ -35,8 +35,8 @@ mv "${SRC_PATH:?}/"* "${SRC_PATH_TMP:?}/"
 cd "${SRC_PATH_TMP:?}/"
 
 # Optimize Images
-find . -name '*.jpg' -type f -exec sh -c 'jpegoptim "$1" --strip-all --all-progressive' _ {} \;
-find . -name '*.png' -type f -exec sh -c 'zopfli -y -m "$1" "$1"' _ {} \;
+find . -name '*.jpg' -type f -exec sh -c 'jpegtran -outfile "$1" -perfect -copy none "$1"' _ {} \;
+find . -name '*.png' -type f -exec sh -c 'oxipng -o 3 -i 1 --strip all "$1"' _ {} \;
 
 # Remove Extraneous Files
 find . -name '*.gz' -type f -delete
