@@ -4,6 +4,7 @@ ruby '>=2.6'
 
 gem 'autoprefixer-rails', '>= 9.7.6'
 gem 'jekyll', '>= 3.8.7'
+gem 'kramdown-parser-gfm', '>=1.1.0'
 gem 'mini_magick', '>= 4.10.1'
 gem 'uglifier', '>= 4.2.0'
 gem 'sprockets', '~> 3.7.2'

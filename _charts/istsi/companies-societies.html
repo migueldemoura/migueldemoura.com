@@ -1,23 +1,23 @@
 <body>
   <script src="../../node_modules/chart.js/dist/Chart.js"></script>
-  <canvas id="canvas"></canvas>
+  <script src="../../node_modules/file-saver/FileSaver.js"></script>
+  <canvas id="canvas" width="1220"></canvas>
   <script>
     let color = Chart.helpers.color;
-    let opacityLow = 0.25;
     let backgroundColors = [
-      color('rgb(78,52,46)').alpha(opacityLow).rgbString(),
-      color('rgb(173,20,87)').alpha(opacityLow).rgbString(),
-      color('rgb(255,143,0)').alpha(opacityLow).rgbString(),
-      color('rgb(40,53,147)').alpha(opacityLow).rgbString(),
-      color('rgb(216,67,21)').alpha(opacityLow).rgbString(),
-      color('rgb(0,131,143)').alpha(opacityLow).rgbString(),
-      color('rgb(21,101,192)').alpha(0.8).rgbString(),
-      color('rgb(69,39,160)').alpha(opacityLow).rgbString(),
-      color('rgb(0,105,92)').alpha(opacityLow).rgbString(),
-      color('rgb(249,168,37)').alpha(opacityLow).rgbString(),
-      color('rgb(198,40,40)').alpha(opacityLow).rgbString(),
-      color('rgb(158,157,36)').alpha(opacityLow).rgbString(),
-      color('rgb(55,71,79)').alpha(opacityLow).rgbString(),
+      color('rgb(78,52,46)').rgbString(),
+      color('rgb(173,20,87)').rgbString(),
+      color('rgb(255,143,0)').rgbString(),
+      color('rgb(40,53,147)').rgbString(),
+      color('rgb(216,67,21)').rgbString(),
+      color('rgb(0,131,143)').rgbString(),
+      color('rgb(21,101,192)').rgbString(),
+      color('rgb(69,39,160)').rgbString(),
+      color('rgb(0,105,92)').rgbString(),
+      color('rgb(249,168,37)').rgbString(),
+      color('rgb(198,40,40)').rgbString(),
+      color('rgb(158,157,36)').rgbString(),
+      color('rgb(55,71,79)').rgbString(),
     ];
 
     new Chart(document.getElementById('canvas').getContext('2d'), {
@@ -47,11 +47,25 @@
         ]
       },
       options: {
+        maintainAspectRatio: false,
         title: {
           display: true,
           text: 'Companies per Society per Year'
         }
-      }
+      },
+      plugins: [{
+        beforeInit: function(chart, options) {
+          chart.legend.afterFit = function() {
+            this.height = this.height - 100;
+          };
+        }
+      }]
     });
+
+    function save() {
+      document.getElementById('canvas').toBlob(function(blob) {
+        saveAs(blob, 'companies-societies.png');
+      });
+    }
   </script>
 </body>

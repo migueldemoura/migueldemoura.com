@@ -1,8 +1,9 @@
 <body>
   <script src="../../node_modules/chart.js/dist/Chart.js"></script>
-  <canvas id="canvas0"></canvas>
-  <canvas id="canvas1"></canvas>
-  <canvas id="canvas2"></canvas>
+  <script src="../../node_modules/file-saver/FileSaver.js"></script>
+  <canvas id="canvas0" width="1220"></canvas>
+  <canvas id="canvas1" width="1220"></canvas>
+  <canvas id="canvas2" width="1220"></canvas>
   <script>
     let charts = [];
     let color = Chart.helpers.color;
@@ -16,8 +17,9 @@
       },
       scales: {
         xAxes: [{
+          barPercentage: 0.75,
           gridLines: {
-            display: false
+            display: true
           }
         }],
         yAxes: [{
@@ -33,17 +35,17 @@
     let dataBase = {
       datasets: [{
         label: '2015',
-        backgroundColor: color('rgb(1, 191, 194)').alpha(0.5).rgbString(),
+        backgroundColor: color('rgb(1, 191, 194)').alpha(1).rgbString(),
         borderColor: 'rgb(1, 191, 194)',
         borderWidth: 1
       }, {
         label: '2016',
-        backgroundColor: color('rgb(0, 157, 224)').alpha(0.5).rgbString(),
+        backgroundColor: color('rgb(0, 157, 224)').alpha(1).rgbString(),
         borderColor: 'rgb(0, 157, 224)',
         borderWidth: 1
       }, {
         label: '2017',
-        backgroundColor: color('rgb(88, 86, 214)').alpha(0.5).rgbString(),
+        backgroundColor: color('rgb(88, 86, 214)').alpha(1).rgbString(),
         borderColor: 'rgb(88, 86, 214)',
         borderWidth: 1
       }]
@@ -80,6 +82,18 @@
         data: data[i],
         type: 'bar',
         options: options[i]
+      });
+    }
+
+    function save() {
+      document.getElementById('canvas0').toBlob(function(blob) {
+        saveAs(blob, 'applicants.png');
+      });
+      document.getElementById('canvas1').toBlob(function(blob) {
+        saveAs(blob, 'applications.png');
+      });
+      document.getElementById('canvas2').toBlob(function(blob) {
+        saveAs(blob, 'companies.png');
       });
     }
   </script>

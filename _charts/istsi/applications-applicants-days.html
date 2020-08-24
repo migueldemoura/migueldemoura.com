@@ -1,6 +1,7 @@
 <body>
   <script src="../../node_modules/chart.js/dist/Chart.js"></script>
-  <canvas id="canvas"></canvas>
+  <script src="../../node_modules/file-saver/FileSaver.js"></script>
+  <canvas id="canvas" width="1220"></canvas>
   <script>
     let color = Chart.helpers.color;
     new Chart(document.getElementById('canvas').getContext('2d'), {
@@ -12,15 +13,15 @@
         datasets: [{
             label: 'Applicants',
             data: [12, 6, 8, 9, 12, 15, 16, 10, 16, 20, 25, 45, 102, 382, 41],
-            backgroundColor: color('rgb(40,53,147)').alpha(0.5).rgbString(),
-            borderColor: 'rgb(40,53,147)',
+            backgroundColor: color('rgb(3,106,210)').rgbString(),
+            borderColor: 'rgb(3,106,210)',
             borderWidth: 1
           },
           {
             label: 'Applications',
             data: [45, 17, 19, 45, 44, 80, 85, 38, 49, 72, 80, 192, 518, 2154, 139],
-            backgroundColor: color('rgb(198,40,40)').alpha(0.5).rgbString(),
-            borderColor: 'rgb(198,40,40)',
+            backgroundColor: color('rgb(216,16,16)').rgbString(),
+            borderColor: 'rgb(216,16,16)',
             borderWidth: 1
           }
         ]
@@ -35,6 +36,7 @@
         },
         scales: {
           xAxes: [{
+            barPercentage: 0.75,
             gridLines: {
               display: false
             }
@@ -50,5 +52,11 @@
         }
       }
     });
+
+    function save() {
+      document.getElementById('canvas').toBlob(function (blob) {
+        saveAs(blob, 'applications-applicants-days.png');
+      });
+    }
   </script>
 </body>

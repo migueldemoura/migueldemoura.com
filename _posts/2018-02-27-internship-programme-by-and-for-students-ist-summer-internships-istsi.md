@@ -46,7 +46,7 @@ This past year saw unprecedented growth on all indices, with the programme reach
 We also managed to attract a lot more companies this time. It should be noted that we only accept those willing to use our simplified platform, meaning that several multinationals that force students to use non-transparent, complicated and invasive systems were rejected.
 
 {% include image.html path="istsi/companies-societies.png"
-   alt="Companies per Society per Year." caption-no="5" caption="Companies per Society per Year. The rings, from inner to outer, pertain to the {2015, 2016, 2017} editions, respectively. The highlighted blue slices represent the share of my society, NEECIST."
+   alt="Companies per Society per Year." caption-no="5" caption="Companies per Society per Year. The rings, from inner to outer, pertain to the {2015, 2016, 2017} editions, respectively."
 %}
 
 The above visualization shows how the programme has been growing (number of participating companies) and how many societies have joined since 2015.
