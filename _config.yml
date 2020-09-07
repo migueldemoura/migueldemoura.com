@@ -43,7 +43,7 @@ webrick:
     X-Content-Type-Options: "nosniff"
     X-Frame-Options: "DENY"
     X-XSS-Protection: "1; mode=block"
-    Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self' 'sha256-W8bJE+kUIdtg4j8sSoSZx6tW1A4lxbU9Lk2ApHWmX3U=' 'sha256-0sco/5HuKzTzjGUvrqOZmL6QCJT+aklxIt4e228C9RA='; img-src 'self'; media-src 'self'; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; require-sri-for script style; base-uri 'self'"
+    Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self' 'sha256-W8bJE+kUIdtg4j8sSoSZx6tW1A4lxbU9Lk2ApHWmX3U=' 'sha256-0sco/5HuKzTzjGUvrqOZmL6QCJT+aklxIt4e228C9RA='; img-src 'self'; media-src 'self'; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self'"
     Cross-Origin-Resource-Policy: "same-site"
     Permissions-Policy: "accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), fullscreen=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=()"
     Referrer-Policy: "no-referrer"
