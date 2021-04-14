@@ -19,7 +19,6 @@ Javascript is required for the image zoom effect ([Zooming](https://github.com/k
 Template - `LICENSE-MIT.md`.
 Post content and assets - `LICENSE-CC-BY-SA-4.0.md`.
 
-   [Chalk template]: <https://github.com/nielsenramon/chalk>
    [migueldemoura.com]: <https://migueldemoura.com/>
    [8985053]: <https://github.com/migueldemoura/migueldemoura.com/commit/8985053b148392280c98040923b2ea497b10bc70>
    [50c4495]: <https://github.com/migueldemoura/migueldemoura.com/commit/50c4495ef31b8f5febf23f011a8fa95984804f9f>
