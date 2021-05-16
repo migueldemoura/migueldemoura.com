@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "chart.js": "^3.2.1",
-    "eslint": "^7.20.0",
+    "eslint": "^7.26.0",
     "file-saver": "^2.0.5",
     "htmlhint": "~0.14.2",
     "remark-cli": "^9.0.0",
@@ -17,8 +17,8 @@
     "remark-preset-lint-consistent": "^4.0.0",
     "remark-preset-lint-markdown-style-guide": "^4.0.0",
     "remark-preset-lint-recommended": "^5.0.0",
-    "shellcheck": "~0.4.4",
-    "stylelint": "^13.11.0",
+    "shellcheck": "^1.0.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-concentric-order": "^4.0.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0"
