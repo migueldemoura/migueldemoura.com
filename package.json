@@ -8,7 +8,7 @@
     "zooming": "^2.1.1"
   },
   "devDependencies": {
-    "chart.js": "^2.9.4",
+    "chart.js": "^3.2.1",
     "eslint": "^7.20.0",
     "file-saver": "^2.0.5",
     "htmlhint": "~0.14.2",
