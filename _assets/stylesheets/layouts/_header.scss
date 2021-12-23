@@ -12,7 +12,7 @@ nav {
     font-size: 14px;
     &.subscribe {
       margin-left: 12px;
-      background: $base-accent-color;
+      background: $base-background-accent-color;
       color: $white;
     }
   }
@@ -22,8 +22,8 @@ header {
   text-align: center;
   a {
     @include hover-active-focus {
-      outline-color: $base-font-secondary-color;
-      color: $base-font-secondary-color;
+      outline-color: $base-font-color;
+      color: $base-font-color;
     }
     img {
       display: inline-block;
@@ -33,7 +33,7 @@ header {
     }
     h1 {
       @include hover-active-focus {
-        outline-color: $base-font-secondary-color;
+        outline-color: $base-font-color;
       }
       margin: 15px 0 0 0;
       font-size: 1.6rem;

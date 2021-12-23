@@ -5,6 +5,7 @@
 
 document.addEventListener('turbolinks:load', () => {
   new Zooming({
+    bgColor: '#131516',
     customSize: '100%',
     scaleBase: 0.9,
     scaleExtra: 0,

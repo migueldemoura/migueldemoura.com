@@ -13,6 +13,7 @@
 
 body {
   margin: 35px;
+  background-color: $base-background-color;
   line-height: $base-line-height;
   color: $base-font-color;
   font-family: $base-font-family;
@@ -43,7 +44,7 @@ h5,
 h6 {
   margin-bottom: 1rem;
   line-height: 1.25;
-  color: $base-font-secondary-color;
+  color: $base-font-color;
 }
 
 h1 {
@@ -72,9 +73,6 @@ a {
 }
 
 svg {
-  @include hover-active-focus {
-    fill: $base-font-secondary-color;
-  }
   fill: $base-font-color;
   vertical-align: middle;
 }
@@ -89,9 +87,9 @@ ol {
 
 blockquote {
   margin: 40px 0;
-  border-left: 5px solid $base-background-accent-color;
+  border-left: 5px solid $base-font-color;
   border-radius: $base-border-radius;
-  background: $base-background-color;
+  background: $base-background-secondary-accent-color;
   padding: 5px 30px;
   p {
     margin: 15px 0;

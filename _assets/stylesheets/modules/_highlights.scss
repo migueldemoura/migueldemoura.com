@@ -6,15 +6,15 @@
 code.highlighter-rouge,
 // Block highlighting
 pre.highlight {
-  border: 1px solid $base-background-accent-color;
+  border: 1px solid $base-background-secondary-accent-color;
   border-radius: $base-border-radius;
-  background: $base-background-color;
+  background-color: $base-background-secondary-accent-color;
 }
 
 code.highlighter-rouge {
   padding: 2px 4px;
   word-break: break-word;
-  color: #d14;
+  color: #f07076;
   font-size: 14px;
 }
 
@@ -63,12 +63,6 @@ pre.highlight {
   color: #999;
 }
 
-// Error
-.err {
-  background-color: #e3d2d2;
-  color: #a61717;
-}
-
 // Keyword
 .k,
 // Operator
@@ -81,7 +75,7 @@ pre.highlight {
 .gs,
 // Operator.Word
 .ow {
-  font-weight: $base-font-weight-bold;
+  color: #79c0ff;
 }
 
 // Generic.Deleted
@@ -94,13 +88,6 @@ pre.highlight {
     background-color: #faa;
     color: inherit;
   }
-}
-
-// Generic.Error
-.gr,
-// Generic.Traceback
-.gt {
-  color: #a00;
 }
 
 // Generic.Inserted
@@ -130,29 +117,9 @@ pre.highlight {
   color: #aaa;
 }
 
-// Keyword.Constant
-.kc,
-// Keyword.Declaration
-.kd,
-// Keyword.Pseudo
-.kp,
-// Keyword.Reserved
-.kr,
-// Keyword.Type
-.kt {
-  color: #458;
-  font-weight: $base-font-weight-bold;
-}
-
 // Name.Class
 .nc {
   color: #458;
-  font-weight: $base-font-weight-bold;
-}
-
-// Name.Entity
-.ni {
-  color: #800080;
 }
 
 // Name.Exception
@@ -160,12 +127,16 @@ pre.highlight {
 // Name.Function
 .nf {
   color: #900;
-  font-weight: $base-font-weight-bold;
 }
 
 // Name.Namespace
 .nn {
   color: #555;
+}
+
+// Name.Other
+.nx {
+  color: #d2a8ff;
 }
 
 // Text.Whitespace
@@ -187,7 +158,7 @@ pre.highlight {
 .m,
 // Name.Tag
 .nt {
-  color: #032f62;
+  color: #79c0ff;
 }
 
 // Literal.String.Backtick
@@ -212,27 +183,5 @@ pre.highlight {
 .s1,
 // Literal.String
 .s {
-  color: #d14;
-}
-
-// Literal.String.Symbol
-.ss {
-  color: #990073;
-}
-
-// Name.Attribute
-.na,
-// Name.Builtin
-.nb,
-// Name.Constant
-.no,
-// Name.Variable.Class
-.vc,
-// Name.Variable.Global
-.vg,
-// Name.Variable.Instance
-.vi,
-// Name.Variable
-.nv {
-  color: #005cc5;
+  color: #a5d6ff;
 }
