@@ -34,6 +34,27 @@ mkdir -p "${SRC_PATH_TMP:?}/"
 mv "${SRC_PATH:?}/"* "${SRC_PATH_TMP:?}/"
 cd "${SRC_PATH_TMP:?}/"
 
+# Minify HTML
+../node_modules/.bin/html-minifier-terser \
+  --collapse-boolean-attributes \
+  --collapse-whitespace \
+  --decode-entities \
+  --minify-css \
+  --minify-js \
+  --remove-attribute-quotes \
+  --remove-comments \
+  --remove-empty-attributes \
+  --remove-optional-tags \
+  --remove-redundant-attributes \
+  --remove-script-type-attributes \
+  --remove-style-link-type-attributes \
+  --sort-attributes \
+  --sort-class-name \
+  --use-short-doctype \
+  --file-ext html \
+  --input-dir . \
+  --output-dir .
+
 # Optimize Images
 find . -name '*.jpg' -type f -exec sh -c 'jpegtran -outfile "$1" -perfect -copy none "$1"' _ {} \;
 find . -name '*.png' -type f -exec sh -c 'oxipng -o 3 -i 1 --strip all "$1"' _ {} \;
