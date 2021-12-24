@@ -12,7 +12,15 @@ layout: default
     {{ content }}
   </section>
   <div class="divider"></div>
-  <footer>
+  {% comment %}
+    The class `share-article` is only used to ensure the whole share section is
+    hidden when the reader uses a content blocking extension with a list targeting
+    social share buttons. Otherwise, only the buttons themselves would be hidden
+    and the `Share` text would be visible which isn't ideal.
+    Right now this class is in the list hence why it was picked:
+    https://github.com/AdguardTeam/AdguardFilters/blob/master/SocialFilter/sections/general_elemhide.txt
+  {% endcomment %}
+  <footer class="share-article">
     <h2>Share</h2>
     <a href="https://twitter.com/intent/tweet/?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" aria-label="Share on Twitter" rel="noopener" target="_blank">
       {% include svg-icon.html icon="twitter" %}
