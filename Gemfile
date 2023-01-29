@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '>=2.6'
+ruby '>=' + File.read('.ruby-version').strip
 
 gem 'autoprefixer-rails', '>= 9.7.6'
 gem 'jekyll', '>= 3.8.7'
