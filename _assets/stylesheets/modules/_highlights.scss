@@ -1,10 +1,6 @@
-// =============================================================================
-// Highlights
-// =============================================================================
-
-// Inline highlighting
+/* Inline highlighting */
 code.highlighter-rouge,
-// Block highlighting
+/* Block highlighting */
 pre.highlight {
   border: 1px solid $base-background-secondary-accent-color;
   border-radius: $base-border-radius;
@@ -27,161 +23,161 @@ pre.highlight {
   font-size: 14px;
 }
 
-// Highlighting types
-// =============================================================================
+/* Highlighting types
+============================================================================= */
 
-// Comment
+/* Comment */
 .c,
-// Comment.Multiline
+/* Comment.Multiline */
 .cm,
-// Comment.Single
+/* Comment.Single */
 .c1,
-// Comment.Special
+/* Comment.Special */
 .cs,
-// Generic.Emph
+/* Generic.Emph */
 .ge {
   font-style: italic;
 }
 
-// Comment
+/* Comment */
 .c,
-// Comment.Multiline
+/* Comment.Multiline */
 .cm,
-// Comment.Single
+/* Comment.Single */
 .c1 {
   color: #998;
 }
 
-// Comment.Single
+/* Comment.Single */
 .cp,
-// Comment.Special
+/* Comment.Special */
 .cs,
-// Generic.Heading
+/* Generic.Heading */
 .gh,
-// Name.Builtin.Pseudo
+/* Name.Builtin.Pseudo */
 .bp {
   color: #999;
 }
 
-// Keyword
+/* Keyword */
 .k,
-// Operator
+/* Operator */
 .o,
-// Comment.Single
+/* Comment.Single */
 .cp,
-// Comment.Special
+/* Comment.Special */
 .cs,
-// Generic.Strong
+/* Generic.Strong */
 .gs,
-// Operator.Word
+/* Operator.Word */
 .ow {
   color: #79c0ff;
 }
 
-// Generic.Deleted
+/* Generic.Deleted */
 .gd {
   background-color: #fdd;
   color: #000;
 
-  // Generic.Deleted.Specific
+  /* Generic.Deleted.Specific */
   .x {
     background-color: #faa;
     color: inherit;
   }
 }
 
-// Generic.Inserted
+/* Generic.Inserted */
 .gi {
   background-color: #dfd;
   color: #000;
 }
 
-// Generic.Inserted.Specific
+/* Generic.Inserted.Specific */
 .gi .x {
   background-color: #afa;
   color: #000;
 }
 
-// Generic.Output
+/* Generic.Output */
 .go {
   color: #888;
 }
 
-// Generic.Prompt
+/* Generic.Prompt */
 .gp {
   color: #555;
 }
 
-// Generic.Subheading
+/* Generic.Subheading */
 .gu {
   color: #aaa;
 }
 
-// Name.Class
+/* Name.Class */
 .nc {
   color: #458;
 }
 
-// Name.Exception
+/* Name.Exception */
 .ne,
-// Name.Function
+/* Name.Function */
 .nf {
   color: #900;
 }
 
-// Name.Namespace
+/* Name.Namespace */
 .nn {
   color: #555;
 }
 
-// Name.Other
+/* Name.Other */
 .nx {
   color: #d2a8ff;
 }
 
-// Text.Whitespace
+/* Text.Whitespace */
 .w {
   color: #bbb;
 }
 
-// Literal.Number.Float
+/* Literal.Number.Float */
 .mf,
-// Literal.Number.Hex
+/* Literal.Number.Hex */
 .mh,
-// Literal.Number.Integer
+/* Literal.Number.Integer */
 .mi,
-// Literal.Number.Integer.Long
+/* Literal.Number.Integer.Long */
 .il,
-// Literal.Number.Oct
+/* Literal.Number.Oct */
 .mo,
-// Literal.Number
+/* Literal.Number */
 .m,
-// Name.Tag
+/* Name.Tag */
 .nt {
   color: #79c0ff;
 }
 
-// Literal.String.Backtick
+/* Literal.String.Backtick */
 .sb,
-// Literal.String.Char
+/* Literal.String.Char */
 .sc,
-// Literal.String.Doc
+/* Literal.String.Doc */
 .sd,
-// Literal.String.Double
+/* Literal.String.Double */
 .s2,
-// Literal.String.Escape
+/* Literal.String.Escape */
 .se,
-// Literal.String.Heredoc
+/* Literal.String.Heredoc */
 .sh,
-// Literal.String.Interpol
+/* Literal.String.Interpol */
 .si,
-// Literal.String.Other
+/* Literal.String.Other */
 .sx,
-// Literal.String.Regex
+/* Literal.String.Regex */
 .sr,
-// Literal.String.Single
+/* Literal.String.Single */
 .s1,
-// Literal.String
+/* Literal.String */
 .s {
   color: #a5d6ff;
 }

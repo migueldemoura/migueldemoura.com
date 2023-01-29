@@ -1,29 +1,26 @@
-// =============================================================================
-// Main
-// =============================================================================
+/* Vendor */
 
-// Vendor
+/* stylelint-disable-next-line scss/at-import-no-partial-leading-underscore */
+@import "../../node_modules/normalize-scss/sass/_normalize";
 
-@import '../../node_modules/normalize-scss/sass/_normalize.scss';
+/* Settings */
 
-// Settings
+@import "variables";
+@import "mixins";
+@import "base";
 
-@import 'variables';
-@import 'mixins';
-@import 'base';
+/* Layouts */
 
-// Layouts
+@import "layouts/header";
+@import "layouts/footer";
 
-@import 'layouts/header';
-@import 'layouts/footer';
+/* Modules */
 
-// Modules
+@import "modules/articles";
+@import "modules/highlights";
+@import "modules/turbolinks";
 
-@import 'modules/articles';
-@import 'modules/highlights';
-@import 'modules/turbolinks';
+/* Pages */
 
-// Pages
-
-@import 'pages/about';
-@import 'pages/notfound';
+@import "pages/about";
+@import "pages/notfound";

@@ -1,9 +1,5 @@
-// =============================================================================
-// Base
-// =============================================================================
-
-// Document
-// =============================================================================
+/* Document
+============================================================================= */
 
 *,
 *::before,
@@ -19,13 +15,14 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
+
   @include breakpoint(extra-small) {
     margin: 35px 20px;
   }
 }
 
-// Typography
-// =============================================================================
+/* Typography
+============================================================================= */
 
 p {
   margin: 0;
@@ -68,6 +65,7 @@ a {
   @include hover-active-focus {
     text-decoration: underline;
   }
+
   text-decoration: none;
   color: $base-accent-color;
 }
@@ -80,6 +78,7 @@ svg {
 ul,
 ol {
   padding-left: 50px;
+
   @include breakpoint(extra-small) {
     padding-left: 30px;
   }
@@ -91,13 +90,14 @@ blockquote {
   border-radius: $base-border-radius;
   background: $base-background-secondary-accent-color;
   padding: 5px 30px;
+
   p {
     margin: 15px 0;
   }
 }
 
-// Other
-// =============================================================================
+/* Other
+============================================================================= */
 
 hr {
   margin: 30px 0;
@@ -119,23 +119,28 @@ img {
 figure {
   margin: 30px 0;
   font-size: 14px;
+
   a {
     @include hover-active-focus {
       outline: none;
     }
   }
+
   figcaption {
     margin-top: 15px;
   }
+
   &.vertical {
     img {
       margin-right: auto;
       margin-left: auto;
       max-width: 350px;
+
       @include breakpoint(extra-small) {
         max-width: 100%;
       }
     }
+
     figcaption {
       text-align: center;
     }
@@ -146,19 +151,24 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
+
   thead {
     background: $base-background-color;
   }
+
   th {
     padding: 6px 10px;
     text-align: left;
   }
+
   td {
     border-top: 1px solid $base-border-color;
     padding: 4px 10px;
+
     &:first-child {
       vertical-align: top;
       white-space: nowrap;
+
       @include breakpoint(extra-small) {
         white-space: normal;
       }

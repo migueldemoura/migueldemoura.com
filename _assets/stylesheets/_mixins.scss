@@ -1,9 +1,5 @@
-// =============================================================================
-// Mixins
-// =============================================================================
-
-// Handling breakpoints for media queries
-// @param {Number} $val the media query specification.
+/* Handling breakpoints for media queries
+@param {Number} $val the media query specification. */
 
 @mixin breakpoint($val) {
   @if $val == extra-small {
@@ -23,7 +19,7 @@
       @content;
     }
   } @else {
-    @warn 'The parameter #{$val} is not valid';
+    @warn "The parameter #{$val} is not valid";
   }
 }
 
