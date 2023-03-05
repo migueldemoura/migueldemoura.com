@@ -2,7 +2,7 @@
 
 set -e
 
-# Loads DEST_PATH
+# Loads CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_PROJECT_NAME
 # shellcheck disable=SC1091
 source .env
 
@@ -10,8 +10,13 @@ ROOT_PATH=$(cd "$(dirname "$0")"; pwd -P)/../
 SRC_PATH="${ROOT_PATH:?}/_site"
 SRC_PATH_TMP="${ROOT_PATH:?}/_deploy"
 
-if [[ -z "$DEST_PATH" ]]; then
-  echo "\$DEST_PATH cannot be empty" >&2
+if [[ -z "$CLOUDFLARE_ACCOUNT_ID" ]]; then
+  echo "\$CLOUDFLARE_ACCOUNT_ID cannot be empty" >&2
+  exit 1
+fi
+
+if [[ -z "$CLOUDFLARE_PROJECT_NAME" ]]; then
+  echo "\$CLOUDFLARE_PROJECT_NAME cannot be empty" >&2
   exit 1
 fi
 
@@ -63,8 +68,11 @@ find . -name '*.png' -type f -exec sh -c 'oxipng -o 3 -i 1 --strip all "$1"' _ {
 find . -name '*.gz' -type f -delete
 rm assets/.sprockets-manifest-*.json
 
-# Sync Build with Production
-rsync -av --delete . "${DEST_PATH:?}/"
+# Copy Cloudflare Pages config files
+cp ../_headers ../_redirects .
+
+# Push to Cloudflare Pages
+CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID" npx wrangler pages publish --project-name "$CLOUDFLARE_PROJECT_NAME" .
 
 # Cleanup
 npm run clean
