@@ -1,0 +1,2 @@
+/:page.html /en/[page] 200
+/posts/:page.html /posts/[page] 200
