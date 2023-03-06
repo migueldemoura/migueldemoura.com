@@ -8,3 +8,5 @@
 !*.css
 !*.scss
 Gemfile
+_headers
+_redirects
