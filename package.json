@@ -21,7 +21,7 @@
     "stylelint": "^15.2.0",
     "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-standard-scss": "^9.0.0",
-    "stylelint-scss": "^4.4.0"
+    "stylelint-scss": "^5.0.0"
   },
   "scripts": {
     "setup": "bundle install --path ruby_gems && npm install",
