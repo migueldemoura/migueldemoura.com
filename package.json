@@ -20,7 +20,7 @@
         "remark-preset-lint-recommended": "^7.0.0",
         "stylelint": "^16.3.1",
         "stylelint-config-concentric-order": "^5.2.0",
-        "stylelint-config-standard-scss": "^13.1.0",
+        "stylelint-config-standard-scss": "^14.0.0",
         "stylelint-scss": "^6.2.1"
     },
     "scripts": {
