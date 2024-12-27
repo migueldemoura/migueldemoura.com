@@ -1,12 +1,8 @@
-/_deploy/
-/_site/
-/.bundle/
-/.jekyll-cache/
-/node_modules/
-/ruby_gems/
 *.*
 !*.css
 !*.scss
-Gemfile
+/deploy/
+/public/
+/node_modules/
 _headers
 _redirects

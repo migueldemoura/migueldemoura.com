@@ -1,11 +1,7 @@
 !.keep
 .env
-/_deploy/
-/_drafts/
-/_site/
-/.bundle/
-/.jekyll-cache/
+/deploy/
 /node_modules/
-/ruby_gems/
-Gemfile.lock
-package-lock.json
+/public/
+/static/main.js
+/static/processed_images/

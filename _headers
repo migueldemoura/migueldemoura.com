@@ -1,6 +1,6 @@
 /*
     Access-Control-Allow-Origin: https://migueldemoura.com
-    Content-Security-Policy: default-src 'self'; script-src 'sha256-4NiodiPaoWGdMnNvXBZf4CRywj0myrJf5abtShk+JGY='; style-src 'self' 'sha256-bNxVZe4cNFhCS6lQ4v9vOzHt1NKEOBJEsXjT8hNb9z0=' 'sha256-voXja0NHK+kj/CO6kVFGewEz+qyDFbxR+WW6e9vfN3o='; img-src 'self'; media-src 'self'; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self';
+    Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; media-src 'self'; frame-src 'none'; manifest-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self';
     Cross-Origin-Embedder-Policy: require-corp
     Cross-Origin-Opener-Policy: same-origin
     Cross-Origin-Resource-Policy: same-origin

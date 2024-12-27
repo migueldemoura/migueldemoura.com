@@ -8,31 +8,31 @@
         "zooming": "^2.1.1"
     },
     "devDependencies": {
-        "chart.js": "^4.4.2",
-        "@biomejs/biome": "^1.7.0",
+        "@biomejs/biome": "^1.9.4",
+        "chart.js": "^4.4.7",
+        "esbuild": "^0.24.2",
         "file-saver": "^2.0.5",
         "html-minifier-terser": "^7.2.0",
         "htmlhint": "^1.1.4",
-        "remark-cli": "^12.0.0",
+        "remark-cli": "^12.0.1",
         "remark-lint": "^10.0.0",
         "remark-preset-lint-consistent": "^6.0.0",
         "remark-preset-lint-markdown-style-guide": "^6.0.0",
         "remark-preset-lint-recommended": "^7.0.0",
-        "stylelint": "^16.3.1",
+        "shellcheck": "^3.0.0",
+        "stylelint": "^16.12.0",
         "stylelint-config-concentric-order": "^5.2.0",
+        "stylelint-config-standard": "^36.0.1",
         "stylelint-config-standard-scss": "^14.0.0",
-        "stylelint-scss": "^6.2.1"
+        "stylelint-scss": "^6.10.0"
     },
     "scripts": {
-        "setup": "bundle install --path ruby_gems && npm install",
-        "build": "bundle exec jekyll build",
-        "serve": "bundle exec jekyll serve",
+        "setup": "yarn install",
+        "build": "yarn run esbuild js/main.js --bundle --minify --outfile=static/main.js && zola build",
+        "serve": "yarn run esbuild js/main.js --bundle --minify --outfile=static/main.js && zola serve",
+        "lint": "stylelint . && biome ci . && htmlhint public && remark content && shellcheck **/*.sh",
         "deploy": "bin/deploy.sh",
-        "clean": "rm -rf package-lock.json Gemfile.lock node_modules/ _site/ _deploy/ .bundle/ .jekyll-cache/ ruby_gems/",
-        "lint:scss": "stylelint .",
-        "lint:js": "biome ci .",
-        "lint:html": "htmlhint _site _deploy",
-        "lint:md": "remark _posts",
-        "lint:sh": "shellcheck **/*.sh"
-    }
+        "clean": "rm -rf node_modules/ public/ deploy/"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

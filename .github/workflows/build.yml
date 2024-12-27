@@ -6,20 +6,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v1
+      - name: setup-zola
+        run: |
+          curl -s -L https://github.com/getzola/zola/releases/download/v0.19.2/zola-v0.19.2-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
+      - uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: 22.x
 
       - run: sudo apt-get install -y shellcheck
 
       - run: |
-          npm run setup
+          yarn run setup
       - run: |
-          npm run lint:sh
-          npm run lint:scss
-          npm run lint:js
-          npm run lint:md
-          npm run build
-          npm run lint:html
+          yarn run lint
+          yarn run build

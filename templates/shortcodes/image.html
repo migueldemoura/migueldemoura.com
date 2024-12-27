@@ -1,0 +1,22 @@
+{% set image_meta = get_image_metadata(path=path) %}
+{% set image_200 = resize_image(path=path, width=200, op='fit_width') %}
+{% set image_400 = resize_image(path=path, width=400, op='fit_width') %}
+{% set image_610 = resize_image(path=path, width=610, op='fit_width') %}
+{% set image_1220 = resize_image(path=path, width=1220, op='fit_width') %}
+
+<figure{% if vertical %} class="vertical" {% endif %}>
+    <a href="{{ get_url(path=path) }}">
+        <img sizes="(max-width: 240px) 200px, (max-width: 480px) 440px, 610px, 610px 2x" alt="{{ alt }}"
+            data-action="zoom" data-zooming-width="{{ image_meta.width }}"
+            data-zooming-height="{{ image_meta.height }}" loading="lazy"
+            integrity="sha384-{{ get_hash(path=path, sha_type=384) }}" crossorigin="anonymous"
+            src="{{ get_url(path=path) }}" srcset="
+            {{ image_200.url }} 200w,
+            {{ image_400.url }} 440w,
+            {{ image_610.url }} 610w,
+            {{ image_1220.url }} 1220w">
+    </a>
+    {% if caption %}
+    <figcaption><strong>Figure {{ caption_no }} - </strong>{{ caption }}</figcaption>
+    {% endif%}
+</figure>

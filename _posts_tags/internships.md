@@ -1,4 +1,0 @@
----
-slug: internships
-name: Internships
----

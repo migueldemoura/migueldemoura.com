@@ -1,0 +1,45 @@
+nav {
+    margin-top: 15px;
+    padding: 4px 0;
+    text-align: center;
+
+    a {
+        border-radius: $base-border-radius;
+        padding: 8px;
+        font-size: 14px;
+
+        &.subscribe {
+            margin-left: 12px;
+            background: $base-background-accent-color;
+            color: $white;
+        }
+    }
+}
+
+header {
+    text-align: center;
+
+    a {
+        @include hover-active-focus {
+            outline-color: $base-font-color;
+            color: $base-font-color;
+        }
+
+        img {
+            display: inline-block;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+        }
+
+        h1 {
+            @include hover-active-focus {
+                outline-color: $base-font-color;
+            }
+
+            margin: 15px 0 0;
+            font-size: 1.6rem;
+            font-weight: $base-font-weight;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// Typography
+// =============================================================================
+
+$base-font-family:
+    /**/
+    /* macOS Safari, macOS Firefox, iOS Safari (San Francisco) */
+    "-apple-system",
+    /* macOS Chrome (San Francisco) */
+    "BlinkMacSystemFont",
+    /* Windows */
+    "Segoe UI",
+    /* Android, Chrome OS */
+    "Roboto",
+    /* KDE */
+    "Oxygen",
+    /* Ubuntu */
+    "Ubuntu",
+    /* GNOME */
+    "Cantarell",
+    /* macOS < 10.11 */
+    "Helvetica Neue",
+    "sans-serif";
+$base-font-family-mono:
+    /* macOS >= 10.12 */
+    "SFMono-Regular",
+    /* Windows */
+    "Consolas",
+    /* GNU/Linux Distributions */
+    "Liberation Mono",
+    /* macOS >= 10.6 */
+    "Menlo",
+    "Courier",
+    "monospace";
+$base-font-weight: normal;
+$base-font-weight-bold: bold;
+
+// Colors
+// =============================================================================
+
+$white: #f1eae1;
+$base-font-color: #cdc8c1;
+$base-font-secondary-color: #8b949e;
+$base-accent-color: #2196f3;
+$base-background-color: #131516;
+$base-background-accent-color: #1051b5;
+$base-background-secondary-accent-color: #161b22;
+$base-border-color: #3a3e41;
+
+// Sizes
+// =============================================================================
+
+// Font sizes
+
+$base-font-size: 16px;
+$base-line-height: 1.6;
+
+// Box sizes
+
+$base-border-radius: 3px;

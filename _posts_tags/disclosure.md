@@ -1,4 +1,0 @@
----
-slug: disclosure
-name: Disclosure
----

@@ -1,0 +1,6 @@
+{% macro svg_icon(icon) %}
+<svg>
+    <use href="{{ get_url(path='images/icons.svg') }}#{{ icon }}"
+        xlink:href="{{ get_url(path='images/icons.svg') }}#{{ icon }}"></use>
+</svg>
+{% endmacro input %}

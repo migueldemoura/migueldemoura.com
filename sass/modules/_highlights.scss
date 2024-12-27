@@ -1,0 +1,28 @@
+/* Inline highlighting */
+code,
+/* Block highlighting */
+pre {
+    border: 1px solid $base-background-secondary-accent-color;
+    border-radius: $base-border-radius;
+    background-color: $base-background-secondary-accent-color;
+}
+
+code {
+    padding: 2px 4px;
+    word-break: break-word;
+    color: #f07076;
+    font-size: 14px;
+}
+
+code[class^="language-"] {
+    color: $base-font-color;
+}
+
+pre {
+    margin: 30px 0;
+    padding: 1.5rem;
+    overflow: auto;
+    line-height: 1.8;
+    font-family: $base-font-family-mono;
+    font-size: 14px;
+}

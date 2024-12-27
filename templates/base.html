@@ -1,0 +1,56 @@
+{% import "macros.html" as macros %}
+
+{% set image_self_2x = resize_image(path='images/self.jpg', width=180, quality=100, op='fit_width') %}
+{% set image_self = resize_image(path='images/self.jpg', width=90, quality=100, op='fit_width') %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include "includes/head.html" %}
+
+<body>
+    <main>
+        <header>
+            <a href="{{ get_url(path='/') }}">
+                <img src="{{ image_self_2x.static_path | trim_start_matches(pat='static') }}" srcset="
+          {{ image_self_2x.static_path | trim_start_matches(pat='static') }} 2x,
+          {{ image_self.static_path | trim_start_matches(pat='static') }} 1x" alt="{{ config.title }} Photo">
+                <h1>{{ config.title }}</h1>
+            </a>
+        </header>
+        <nav>
+            <a href="{{ get_url(path='about') }}">About</a>
+            <a href="{{ get_url(path='feed.xml') }}" class="subscribe">Subscribe RSS</a>
+        </nav>
+        {% block content %}{% endblock content %}
+        <footer class="footer" id="footer">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/{{ config.extra.twitter }}" rel="noopener" target="_blank"
+                        aria-label="Twitter">
+                        {{ macros::svg_icon(icon="twitter") }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/{{ config.extra.github }}" rel="noopener" target="_blank"
+                        aria-label="GitHub">
+                        {{ macros::svg_icon(icon="github") }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/{{ config.extra.linkedin }}" rel="noopener" target="_blank"
+                        aria-label="LinkedIn">
+                        {{ macros::svg_icon(icon="linkedin") }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ get_url(path='email') }}" aria-label="Email" data-turbolinks="false">
+                        {{ macros::svg_icon(icon="email") }}
+                    </a>
+                </li>
+            </ul>
+            <p>&copy; 2024 {{ config.title }}</p>
+        </footer>
+    </main>
+</body>
+
+</html>
