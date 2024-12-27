@@ -16,7 +16,7 @@ highlight_theme = "blog"
 extra_syntaxes_and_themes = ["highlight_themes"]
 
 [extra]
-twitter = "miguel_demoura"
+x = "miguel_demoura"
 github = "migueldemoura"
 linkedin = "migueldemoura"
 email = ""
