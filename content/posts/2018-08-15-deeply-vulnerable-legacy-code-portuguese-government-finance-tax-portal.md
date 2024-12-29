@@ -1,6 +1,7 @@
 +++
 title = "Deeply Vulnerable Legacy Code - Portuguese Government Finance &amp; Tax Portal"
 description = "Part 1/2 - Multiple Reflected XSS, Open Redirects, XSRF"
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/finance-tax-portal-1/main.png"
 +++

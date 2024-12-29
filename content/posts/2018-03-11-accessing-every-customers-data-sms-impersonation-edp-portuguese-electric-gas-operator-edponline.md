@@ -1,6 +1,7 @@
 +++
 title = "Accessing Every Customer's Data &amp; SMS Impersonation - EDP - Portuguese Electric &amp; Gas Operator (EDPOnline)"
 description = "Several PII Leaks (NIF + Full Name + Email + Phone Number), SMS Injection"
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/edp/main.png"
 +++

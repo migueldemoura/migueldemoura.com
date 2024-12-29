@@ -1,6 +1,7 @@
 +++
 title = "Privacy by Design in Cloudflare's WAF"
 description = "Adding better logging capabilities to Cloudflare's WAF while preserving privacy."
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/cloudflare-2/main.png"
 external = true

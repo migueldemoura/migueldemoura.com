@@ -1,6 +1,7 @@
 +++
 title = "Making the Cloudflare WAF 40% faster"
 description = "Improving the Cloudflare WAF performance, decreasing latency and CPU consumption."
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/cloudflare-1/main.png"
 external = true

@@ -1,6 +1,7 @@
 +++
 title = "Internship Programme by and for Students - IST Summer Internships (ISTSI)"
 description = ""
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/istsi/istsi.org.png"
 +++

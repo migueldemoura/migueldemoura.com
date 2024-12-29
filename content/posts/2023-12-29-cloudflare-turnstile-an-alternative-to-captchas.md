@@ -1,6 +1,7 @@
 +++
 title = "Cloudflare Turnstile - a CAPTCHA alternative"
 description = "A user-friendly, accessible, privacy-preserving alternative to CAPTCHAs."
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/cloudflare-3/main.png"
 external = true

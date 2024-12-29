@@ -1,6 +1,7 @@
 +++
 title = "Breaking into the Finance Government Account of Every Portuguese Citizen &amp; Entity"
 description = "Part 2/2 - Arbitrary Account Takeover, PII Leaks (NIF + Phone Number), Reflected XSS"
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/finance-tax-portal-2/main.png"
 +++

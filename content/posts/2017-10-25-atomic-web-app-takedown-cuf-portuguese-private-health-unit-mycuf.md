@@ -1,6 +1,7 @@
 +++
 title = "Atomic Web App Takedown - CUF - Portuguese Private Health Unit (MyCUF)"
 description = "Application DOS, Authenticated, Stored XSS and Email HTML Injection"
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/cuf/normal.png"
 +++

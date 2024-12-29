@@ -1,6 +1,7 @@
 +++
 title = "Harder to Report than to Find Security Vulnerabilities - Portuguese Government"
 description = "Portuguese National Health Service Web Services Security Disclosure"
+updated = "2024-12-29"
 [extra]
 thumb_image = "images/sns/main.png"
 +++
