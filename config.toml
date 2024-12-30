@@ -1,5 +1,6 @@
 base_url = "https://migueldemoura.com"
 title = "Miguel de Moura"
+author = "Miguel de Moura"
 
 compile_sass = true
 
