@@ -4,7 +4,7 @@
 
 This is my personal blog hosted at [migueldemoura.com]. It is built with [Zola] and other open source tools.
 
-### Browser Compatibility
+## Browser Compatibility
 
 Fully supported (Desktop and Mobile):
 
@@ -15,7 +15,7 @@ Fully supported (Desktop and Mobile):
 
 JavaScript is only required for the image zoom effect ([Zooming](https://github.com/kingdido999/zooming)) and faster page transitions ([Turbolinks](https://github.com/turbolinks/turbolinks)).
 
-### License
+## License
 
 Template - `LICENSE-MIT.md`.
 Post content and assets - `LICENSE-CC-BY-SA-4.0.md`.
