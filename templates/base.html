@@ -18,7 +18,7 @@
             </a>
         </header>
         <nav>
-            <a href="{{ get_url(path='about') }}">About</a>
+            <a href="{{ get_url(path='about', trailing_slash=true) }}">About</a>
             <a href="{{ get_url(path='feed.xml') }}" class="subscribe">Subscribe RSS</a>
         </nav>
         {% block content %}{% endblock content %}
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ get_url(path='email') }}" aria-label="Email" data-turbolinks="false">
+                    <a href="{{ get_url(path='email', trailing_slash=true) }}" aria-label="Email" data-turbolinks="false">
                         {{ macros::svg_icon(icon="email") }}
                     </a>
                 </li>
