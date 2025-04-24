@@ -9,8 +9,8 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4",
-        "chart.js": "^4.4.8",
-        "esbuild": "^0.25.0",
+        "chart.js": "^4.4.9",
+        "esbuild": "^0.25.3",
         "file-saver": "^2.0.5",
         "html-minifier-terser": "^7.2.0",
         "htmlhint": "^1.1.4",
@@ -20,9 +20,9 @@
         "remark-preset-lint-markdown-style-guide": "^6.0.1",
         "remark-preset-lint-recommended": "^7.0.1",
         "shellcheck": "^3.1.0",
-        "stylelint": "^16.15.0",
+        "stylelint": "^16.19.0",
         "stylelint-config-concentric-order": "^5.2.1",
-        "stylelint-config-standard": "^37.0.0",
+        "stylelint-config-standard": "^38.0.0",
         "stylelint-config-standard-scss": "^14.0.0",
         "stylelint-scss": "^6.11.1"
     },
