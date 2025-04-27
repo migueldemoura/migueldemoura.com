@@ -7,7 +7,7 @@ thumb_image = "images/cloudflare-1/main.png"
 external = true
 +++
 
-I've been at [Cloudflare](https://www.cloudflare.com) working as a Systems Engineer in the [Web Application Firewall (WAF)](https://en.wikipedia.org/wiki/Web_application_firewall) team for around 1 and half years now.
+I've been at [Cloudflare](https://www.cloudflare.com) working as a Software Engineer in the [Web Application Firewall (WAF)](https://en.wikipedia.org/wiki/Web_application_firewall) team for around 1 and half years now.
 
 At Cloudflare we always strive to deliver security and performance without compromising either, so I spent some time the last few weeks working on potential WAF performance optimizations.
 
