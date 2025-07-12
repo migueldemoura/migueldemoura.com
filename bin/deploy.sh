@@ -24,7 +24,7 @@ fi
 yarn run clean
 
 # Setup
-yarn run setup
+yarn install
 
 # Build
 yarn run build
